@@ -2,32 +2,40 @@
     <div class="container bm-container">
         <div class="row gy-4">
             <div class="col-lg-4">
-                <a href="{{ path('app_home') }}" class="bm-footer-brand">BELLE MAISON</a>
+                <a href="{{ locale_path('app_home') }}" class="bm-footer-brand">BELLE MAISON</a>
                 <p>Réservation beauté, coiffure, bien-être et espace professionnel SaaS.</p>
             </div>
             <div class="col-6 col-lg-2">
                 <h3>Clients</h3>
-                <a href="{{ path('app_search_results') }}">Rechercher</a>
-                <a href="{{ path('app_account_user') }}">Mon espace</a>
-                <a href="{{ path('app_help_center') }}">Aide</a>
+                <ul>
+                    <li><a href="{{ locale_path('app_search_results') }}">Rechercher</a></li>
+                    <li><a href="{{ locale_path('app_account_user') }}">Mon espace</a></li>
+                    <li><a href="{{ locale_path('app_help_center') }}">Aide</a></li>
+                </ul>
             </div>
             <div class="col-6 col-lg-2">
                 <h3>Professionnels</h3>
-                <a href="{{ path('app_register_pro') }}">Inscrire mon salon</a>
-                <a href="{{ path('app_login_pro') }}">Connexion pro</a>
-                <a href="{{ path('app_pricing_pro') }}">Tarifs</a>
+                <ul>
+                    <li><a href="{{ locale_path('app_register_pro') }}">Inscrire mon salon</a></li>
+                    <li><a href="{{ locale_path('app_login_pro') }}">Connexion pro</a></li>
+                    <li><a href="{{ locale_path('app_pricing_pro') }}">Tarifs</a></li>
+                </ul>
             </div>
             <div class="col-6 col-lg-2">
                 <h3>Ressources</h3>
-                <a href="{{ path('app_blog') }}">Blog</a>
-                <a href="{{ path('app_faq_public') }}">FAQ</a>
-                <a href="{{ path('app_contact') }}">Contact</a>
+                <ul>
+                    <li><a href="{{ locale_path('app_blog') }}">Blog</a></li>
+                    <li><a href="{{ locale_path('app_faq_public') }}">FAQ</a></li>
+                    <li><a href="{{ locale_path('app_contact') }}">Contact</a></li>
+                </ul>
             </div>
             <div class="col-6 col-lg-2">
                 <h3>Légal</h3>
-                <a href="{{ path('app_legal_notice') }}">Mentions légales</a>
-                <a href="{{ path('app_privacy_policy') }}">Confidentialité</a>
-                <a href="{{ path('app_terms') }}">CGU</a>
+                <ul>
+                    <li><a href="{{ locale_path('app_legal_notice') }}">Mentions légales</a></li>
+                    <li><a href="{{ locale_path('app_privacy_policy') }}">Confidentialité</a></li>
+                    <li><a href="{{ locale_path('app_terms') }}">CGU</a></li>
+                </ul>
             </div>
         </div>
     </div>

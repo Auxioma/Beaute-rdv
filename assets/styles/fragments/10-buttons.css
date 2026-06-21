@@ -46,6 +46,17 @@
   border-color: rgba(7, 79, 61, 0.42);
 }
 
+.bm-btn-soft {
+  color: #074f3d;
+  background: #e8f1ed;
+  border-color: rgba(7, 79, 61, 0.16);
+}
+.bm-btn-soft:hover {
+  color: #043729;
+  background: #dbece6;
+  border-color: rgba(7, 79, 61, 0.28);
+}
+
 .bm-btn-light {
   color: #043729;
   background: #fff;

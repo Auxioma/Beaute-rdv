@@ -26,7 +26,7 @@ final class VerifyEmailController extends AbstractController
         $locale = $user instanceof User ? $user->getLocale() : $request->getLocale();
 
         if (!$user instanceof User) {
-            $this->addFlash('verify_email_error', 'Unable to verify your email address.');
+            $this->addFlash('verify_email_error', $translator->trans('auth.flash.verify_email_error'));
 
             return $this->redirectToRoute('app_register_user', [
                 '_locale' => $locale,
@@ -43,7 +43,7 @@ final class VerifyEmailController extends AbstractController
             ]);
         }
 
-        $this->addFlash('success', 'Votre adresse email a bien été validée. Vous pouvez maintenant vous connecter.');
+        $this->addFlash('success', $translator->trans('auth.flash.verify_email_success'));
 
         return $this->redirectToRoute($user->getType() === User::TYPE_PRO ? 'app_login_pro' : 'app_login_user', [
             '_locale' => $locale,

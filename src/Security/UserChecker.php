@@ -17,11 +17,11 @@ final class UserChecker implements UserCheckerInterface
         }
 
         if (!$user->isActive()) {
-            throw new CustomUserMessageAccountStatusException('Votre compte est désactivé.');
+            throw new CustomUserMessageAccountStatusException('auth.security.account_disabled');
         }
 
         if (!$user->isVerified()) {
-            throw new CustomUserMessageAccountStatusException('Veuillez valider votre adresse email avant de vous connecter.');
+            throw new CustomUserMessageAccountStatusException('auth.security.email_not_verified');
         }
     }
 

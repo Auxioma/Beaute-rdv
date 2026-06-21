@@ -19,9 +19,9 @@ final class ResetPasswordRequestFormType extends AbstractType
                 'label' => false,
                 'constraints' => [
                     new NotBlank(
-                        message: 'Veuillez renseigner votre adresse email.',
+                        message: 'auth.validation.email_required',
                     ),
-                    new Email(message: 'Veuillez saisir une adresse email valide.'),
+                    new Email(message: 'auth.validation.email_invalid'),
                 ],
             ])
         ;

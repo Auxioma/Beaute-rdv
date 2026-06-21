@@ -14,6 +14,7 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 use SymfonyCasts\Bundle\ResetPassword\Controller\ResetPasswordControllerTrait;
 use SymfonyCasts\Bundle\ResetPassword\Exception\ResetPasswordExceptionInterface;
 use SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface;
@@ -29,7 +30,7 @@ final class ForgotPasswordController extends AbstractController
     }
 
     #[Route('/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/professionals/password/forgot', name: 'app_forgot_password', methods: ['GET', 'POST'])]
-    public function forgotPassword(Request $request, MailerInterface $mailer): Response
+    public function forgotPassword(Request $request, MailerInterface $mailer, TranslatorInterface $translator): Response
     {
         $form = $this->createForm(ResetPasswordRequestFormType::class);
         $form->handleRequest($request);
@@ -38,7 +39,7 @@ final class ForgotPasswordController extends AbstractController
             /** @var string $email */
             $email = $form->get('email')->getData();
 
-            return $this->processSendingPasswordResetEmail($email, (string) $request->getLocale(), $mailer);
+            return $this->processSendingPasswordResetEmail($email, (string) $request->getLocale(), $mailer, $translator);
         }
 
         return $this->render('auth/forgot_password.html.twig', [
@@ -47,7 +48,7 @@ final class ForgotPasswordController extends AbstractController
         ]);
     }
 
-    private function processSendingPasswordResetEmail(string $emailFormData, string $locale, MailerInterface $mailer): RedirectResponse
+    private function processSendingPasswordResetEmail(string $emailFormData, string $locale, MailerInterface $mailer, TranslatorInterface $translator): RedirectResponse
     {
         $user = $this->userRepository->findOneBy([
             'email' => strtolower(trim($emailFormData)),
@@ -76,7 +77,7 @@ final class ForgotPasswordController extends AbstractController
             (new TemplatedEmail())
                 ->from(new Address('hello@rebel-refine.pro', 'Belle Maison'))
                 ->to((string) $user->getEmail())
-                ->subject('Réinitialisez votre mot de passe professionnel')
+                ->subject($translator->trans('auth.email.reset_pro.subject'))
                 ->htmlTemplate('emails/reset_password_pro.html.twig')
                 ->context([
                     'user' => $user,

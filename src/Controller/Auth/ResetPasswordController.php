@@ -83,7 +83,7 @@ final class ResetPasswordController extends AbstractController
             $this->entityManager->flush();
 
             $this->cleanSessionAfterReset();
-            $this->addFlash('success', 'Votre mot de passe a bien été réinitialisé. Vous pouvez maintenant vous connecter.');
+            $this->addFlash('success', $translator->trans('auth.flash.password_reset_success'));
 
             return $this->redirectToRoute($user->getType() === User::TYPE_PRO || $user->getType() === User::TYPE_STAFF ? 'app_login_pro' : 'app_login_user', [
                 '_locale' => $user->getLocale(),

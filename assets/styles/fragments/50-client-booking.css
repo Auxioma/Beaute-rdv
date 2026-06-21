@@ -88,6 +88,16 @@
   font-size: 0.85rem;
   font-weight: 850;
 }
+.bm-filter-row button {
+  cursor: pointer;
+}
+.bm-filter-row button:hover,
+.bm-filter-row button:focus-visible {
+  color: #074f3d;
+  border-color: rgba(7, 79, 61, 0.32);
+  background: #e8f1ed;
+  outline: 0;
+}
 
 .bm-discovery-results,
 .bm-salon-content,
@@ -1144,6 +1154,13 @@
   border-radius: 2rem;
   padding: 2.5rem;
   box-shadow: var(--bm-shadow-md);
+}
+
+.bm-state-card h2 {
+  font-family: var(--bm-font-serif);
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 0.98;
+  margin: 0;
 }
 
 .bm-state-icon {

@@ -1,6 +1,9 @@
-{% extends 'layouts/admin.html.twig' %}
-{% set page_title = 'Connexion professionnelle — Belle Maison' %}
-{% set meta_description = 'Connectez-vous à votre espace professionnel Belle Maison pour gérer votre fiche, vos prestations, vos demandes de rendez-vous et votre visibilité locale.' %}
+{% extends 'layouts/auth.html.twig' %}
+{% trans_default_domain 'messages' %}
+{% set page_title = 'auth.login_pro.page_title'|trans %}
+{% set meta_description = 'auth.login_pro.meta_description'|trans %}
+{% set body_class = 'bm-page-auth-pro' %}
+{% set main_class = 'bm-auth-main' %}
 
 {% block body %}
 <section aria-labelledby="loginTitle" class="container bm-container">
@@ -9,14 +12,14 @@
 <div class="col-xl-6">
 <div class="bm-auth-visual">
 <div class="bm-auth-visual-inner">
-<span class="bm-auth-brand-mark"><i class="bi bi-gem"></i> Espace professionnel</span>
+<span class="bm-auth-brand-mark"><i class="bi bi-gem"></i> {{ 'auth.login_pro.brand'|trans }}</span>
 <div class="bm-auth-visual-copy">
-<h1 id="loginTitle">Votre salon, toujours accessible.</h1>
-<p>Retrouvez votre espace professionnel pour préparer votre fiche, suivre vos demandes et garder une présentation claire auprès de vos futurs clients.</p>
+<h1 id="loginTitle">{{ 'auth.login_pro.title'|trans }}</h1>
+<p>{{ 'auth.login_pro.subtitle'|trans }}</p>
 <div aria-label="Avantages espace professionnel" class="bm-auth-proof-row">
-<div class="bm-auth-proof"><strong>Agenda lisible</strong><span>Centralisez les demandes importantes et préparez vos créneaux.</span></div>
-<div class="bm-auth-proof"><strong>Fiche premium</strong><span>Prestations, photos, horaires et avis dans une vitrine cohérente.</span></div>
-<div class="bm-auth-proof"><strong>Accès sécurisé</strong><span>Un espace dédié aux professionnels beauté et bien-être.</span></div>
+<div class="bm-auth-proof"><strong>{{ 'auth.login_pro.benefit_1'|trans }}</strong><span>{{ 'auth.login_pro.benefit_1_text'|trans }}</span></div>
+<div class="bm-auth-proof"><strong>{{ 'auth.login_pro.benefit_2'|trans }}</strong><span>{{ 'auth.login_pro.benefit_2_text'|trans }}</span></div>
+<div class="bm-auth-proof"><strong>{{ 'auth.login_pro.benefit_3'|trans }}</strong><span>{{ 'auth.login_pro.benefit_3_text'|trans }}</span></div>
 </div>
 </div>
 </div>
@@ -26,54 +29,58 @@
 <div class="bm-auth-panel">
 <div class="bm-auth-card">
 <div class="bm-auth-card-head">
-<span class="bm-auth-badge"><i class="bi bi-shield-check"></i> Connexion sécurisée</span>
-<h2>Connectez-vous à votre espace pro</h2>
-<p>Accédez à votre compte pour gérer votre établissement, vos informations professionnelles et vos demandes.</p>
+<span class="bm-auth-badge"><i class="bi bi-shield-check"></i> {{ 'auth.login_pro.badge'|trans }}</span>
+<h2>{{ 'auth.login_pro.heading'|trans }}</h2>
+<p>{{ 'auth.login_pro.description'|trans }}</p>
 </div>
 {{ include('components/_flash_messages.html.twig') }}
 {% if error %}
 <div class="alert alert-danger mb-3" role="alert">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
-<form action="{{ path('app_login_pro', {'_locale': app.request.locale}) }}" class="bm-auth-form" method="post" novalidate="">
-<div class="mb-3">
-<label class="form-label bm-label" for="loginEmail">Email professionnel</label>
+<form action="{{ locale_path('app_login_pro', {'_locale': app.request.locale}) }}" class="bm-auth-form" method="post" novalidate="">
+<div class="bm-auth-form-fields">
+<div>
+<label class="form-label bm-label" for="loginEmail">{{ 'auth.common.pro_email'|trans }}</label>
 <div class="bm-auth-field">
 <i class="bi bi-envelope"></i>
-<input autocomplete="email" class="form-control bm-auth-input" id="loginEmail" name="email" placeholder="contact@votresalon.fr" required="" type="email" value="{{ last_username|default('') }}"/>
+<input autocomplete="email" class="form-control bm-auth-input" id="loginEmail" name="email" placeholder="{{ 'auth.login_pro.email_placeholder'|trans }}" required="" type="email" value="{{ last_username|default('') }}"/>
 </div>
 </div>
-<div class="mb-2">
-<label class="form-label bm-label" for="loginPassword">Mot de passe</label>
+<div>
+<label class="form-label bm-label" for="loginPassword">{{ 'auth.common.password'|trans }}</label>
 <div class="bm-auth-field">
 <i class="bi bi-lock"></i>
-<input autocomplete="current-password" class="form-control bm-auth-input" id="loginPassword" name="password" placeholder="Votre mot de passe" required="" type="password"/>
+<input autocomplete="current-password" class="form-control bm-auth-input" id="loginPassword" name="password" placeholder="{{ 'auth.login_user.password_placeholder'|trans }}" required="" type="password"/>
+</div>
 </div>
 </div>
 <input name="_csrf_token" type="hidden" value="{{ csrf_token('authenticate') }}"/>
 <div class="bm-auth-options">
 <label class="bm-auth-check" for="rememberMe">
 <input class="form-check-input" id="rememberMe" name="_remember_me" type="checkbox"/>
-<span>Rester connecté</span>
+<span>{{ 'auth.login_user.remember_me'|trans }}</span>
 </label>
-<a class="bm-auth-link" href="{{ path('app_forgot_password') }}">Mot de passe oublié ?</a>
+<a class="bm-auth-link" href="{{ locale_path('app_forgot_password') }}">{{ 'auth.login_user.forgot_password'|trans }}</a>
 </div>
-<button class="btn bm-btn bm-btn-primary bm-auth-submit" type="submit">Se connecter</button>
+<button class="btn bm-btn bm-btn-primary bm-auth-submit" type="submit">{{ 'auth.login_user.submit'|trans }}</button>
 </form>
-<div class="bm-auth-divider">ou</div>
+<div class="bm-auth-tail">
+<div class="bm-auth-divider">{{ 'auth.common.or'|trans }}</div>
 <div class="bm-auth-secondary-action">
 <div>
-<strong>Vous n’avez pas encore d’espace pro ?</strong>
-<span>Demandez une démonstration et préparez votre fiche établissement.</span>
+<strong>{{ 'auth.login_pro.cta_title'|trans }}</strong>
+<span>{{ 'auth.login_pro.cta_text'|trans }}</span>
 </div>
-<a class="btn bm-btn bm-btn-outline" href="{{ path('app_register_pro') }}">S’inscrire</a>
+<a class="btn bm-btn bm-btn-outline" href="{{ locale_path('app_register_pro') }}">{{ 'auth.login_pro.cta_button'|trans }}</a>
 </div>
 <div class="bm-auth-help-grid">
-<div class="bm-auth-help-card"><i class="bi bi-question-circle"></i><div><strong>Besoin d’aide ?</strong><span>Contactez l’accompagnement professionnel si vous avez perdu vos accès.</span></div></div>
-<div class="bm-auth-help-card"><i class="bi bi-stars"></i><div><strong>Nouvelle fiche</strong><span>Créez une vitrine claire pour vos prestations, vos tarifs et vos photos.</span></div></div>
+<div class="bm-auth-help-card"><i class="bi bi-question-circle"></i><div><strong>{{ 'auth.login_pro.help_1_title'|trans }}</strong><span>{{ 'auth.login_pro.help_1_text'|trans }}</span></div></div>
+<div class="bm-auth-help-card"><i class="bi bi-stars"></i><div><strong>{{ 'auth.login_pro.help_2_title'|trans }}</strong><span>{{ 'auth.login_pro.help_2_text'|trans }}</span></div></div>
 </div>
 <div class="bm-auth-note">
 <i class="bi bi-info-circle"></i>
-<div><strong>Conseil :</strong> utilisez l’adresse email professionnelle liée à votre établissement pour retrouver plus facilement votre compte.</div>
+<div><strong>{{ 'auth.common.tip'|trans }}</strong> {{ 'auth.login_pro.tip_text'|trans }}</div>
+</div>
 </div>
 </div>
 </div>

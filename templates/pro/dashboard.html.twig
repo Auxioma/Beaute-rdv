@@ -13,7 +13,7 @@
 <div class="bm-admin-topbar-actions">
 <button class="btn bm-btn bm-btn-soft" type="button"><i class="bi bi-search me-2"></i>Rechercher</button>
 <button class="btn bm-btn bm-btn-soft" type="button"><i class="bi bi-bell me-2"></i>Alertes</button>
-<a class="btn bm-btn bm-btn-primary" href="{{ path('app_agenda_pro') }}"><i class="bi bi-plus-lg me-2"></i>Nouveau RDV</a>
+<a class="btn bm-btn bm-btn-primary" href="{{ locale_path('app_agenda_pro') }}"><i class="bi bi-plus-lg me-2"></i>Nouveau RDV</a>
 </div>
 </header>
 <section class="bm-admin-grid bm-admin-grid-4">
@@ -24,7 +24,7 @@
 </section>
 <section class="bm-admin-grid bm-admin-grid-main mt-4">
 <article class="bm-admin-panel">
-<div class="bm-admin-panel-head"><div><h2>Rendez-vous du jour</h2><p>Planning chronologique avec statuts.</p></div><a class="bm-link" href="{{ path('app_agenda_pro') }}">Voir l’agenda</a></div>
+<div class="bm-admin-panel-head"><div><h2>Rendez-vous du jour</h2><p>Planning chronologique avec statuts.</p></div><a class="bm-link" href="{{ locale_path('app_agenda_pro') }}">Voir l’agenda</a></div>
 <div class="bm-admin-timeline">
 <div class="bm-admin-timeline-row"><time>09:00</time><div><strong>Marine L.</strong><span>Coupe femme + brushing · Clara · Confirmé</span></div><em class="bm-status bm-status-success">Confirmé</em></div>
 <div class="bm-admin-timeline-row"><time>10:30</time><div><strong>Julien M.</strong><span>Barbe premium · Alex · Acompte payé</span></div><em class="bm-status bm-status-info">En attente</em></div>
@@ -34,15 +34,15 @@
 </article>
 <aside class="bm-admin-panel bm-admin-alerts">
 <div class="bm-admin-panel-head"><div><h2>Alertes</h2><p>Actions prioritaires.</p></div></div>
-<a href="{{ path('app_appointment_detail_pro') }}"><i class="bi bi-exclamation-circle"></i><span>3 rendez-vous non confirmés</span></a>
-<a href="{{ path('app_payments_pro') }}"><i class="bi bi-credit-card"></i><span>2 paiements en attente</span></a>
-<a href="{{ path('app_reviews_pro') }}"><i class="bi bi-star"></i><span>5 avis à traiter</span></a>
-<a href="{{ path('app_services_pro') }}"><i class="bi bi-box-seam"></i><span>Stock kératine bas</span></a>
+<a href="{{ locale_path('app_appointment_detail_pro') }}"><i class="bi bi-exclamation-circle"></i><span>3 rendez-vous non confirmés</span></a>
+<a href="{{ locale_path('app_payments_pro') }}"><i class="bi bi-credit-card"></i><span>2 paiements en attente</span></a>
+<a href="{{ locale_path('app_reviews_pro') }}"><i class="bi bi-star"></i><span>5 avis à traiter</span></a>
+<a href="{{ locale_path('app_services_pro') }}"><i class="bi bi-box-seam"></i><span>Stock kératine bas</span></a>
 </aside>
 </section>
 <section class="bm-admin-grid bm-admin-grid-3 mt-4">
-<a class="bm-admin-shortcut" href="{{ path('app_agenda_pro') }}"><i class="bi bi-plus-circle"></i><strong>Nouveau RDV</strong><span>Créer une réservation en boutique ou par téléphone.</span></a>
-<a class="bm-admin-shortcut" href="{{ path('app_clients_pro') }}"><i class="bi bi-person-plus"></i><strong>Nouveau client</strong><span>Ajouter une fiche client avec consentements RGPD.</span></a>
-<a class="bm-admin-shortcut" href="{{ path('app_availability_pro') }}"><i class="bi bi-slash-circle"></i><strong>Bloquer un créneau</strong><span>Pause, congé, formation ou fermeture exceptionnelle.</span></a>
+<a class="bm-admin-shortcut" href="{{ locale_path('app_agenda_pro') }}"><i class="bi bi-plus-circle"></i><strong>Nouveau RDV</strong><span>Créer une réservation en boutique ou par téléphone.</span></a>
+<a class="bm-admin-shortcut" href="{{ locale_path('app_clients_pro') }}"><i class="bi bi-person-plus"></i><strong>Nouveau client</strong><span>Ajouter une fiche client avec consentements RGPD.</span></a>
+<a class="bm-admin-shortcut" href="{{ locale_path('app_availability_pro') }}"><i class="bi bi-slash-circle"></i><strong>Bloquer un créneau</strong><span>Pause, congé, formation ou fermeture exceptionnelle.</span></a>
 </section>
 {% endblock %}

@@ -1,0 +1,4 @@
+auth:
+  security:
+    account_disabled: "Your account is disabled."
+    email_not_verified: "Please verify your email address before signing in."

@@ -1,29 +1,29 @@
 {% extends 'layouts/email.html.twig' %}
+{% trans_default_domain 'messages' %}
 
 {% block body %}
 <div class="wrap">
     <div class="card">
         <div class="brand">BELLE MAISON</div>
-        <h1>Confirmez votre adresse email</h1>
+        <h1>{{ 'auth.email.verify.heading'|trans }}</h1>
         <p>
-            Bonjour {{ user.firstname|default('') ?: 'et bienvenue' }},
-            votre compte Belle Maison a bien été créé.
+            {{ 'auth.email.verify.greeting'|trans({'%name%': user.firstname|default('') ?: 'auth.email.verify.guest'|trans}) }}
         </p>
         <p>
-            Pour activer votre accès et sécuriser votre compte, veuillez confirmer votre adresse email en cliquant sur le bouton ci-dessous.
+            {{ 'auth.email.verify.text'|trans }}
         </p>
 
         <div class="box">
-            <a class="btn" href="{{ signedUrl }}">Valider mon adresse email</a>
+            <a class="btn" href="{{ signedUrl }}">{{ 'auth.email.verify.button'|trans }}</a>
         </div>
 
         <p>
-            Ce lien expire
+            {{ 'auth.email.verify.expiration_prefix'|trans }}
             {{ expiresAtMessageKey|trans(expiresAtMessageData, 'VerifyEmailBundle') }}.
         </p>
 
         <p class="muted">
-            Si vous n’êtes pas à l’origine de cette inscription, vous pouvez ignorer cet email.
+            {{ 'auth.email.verify.footer'|trans }}
         </p>
     </div>
 </div>

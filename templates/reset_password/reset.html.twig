@@ -1,7 +1,8 @@
 {% extends 'layouts/auth.html.twig' %}
+{% trans_default_domain 'messages' %}
 {% set body_class = is_pro ? 'bm-page-auth-pro' : 'bm-page-auth-user' %}
 {% set main_class = is_pro ? 'bm-auth-main' : 'bm-auth-main bm-auth-main-user' %}
-{% set page_title = page_title|default(is_pro ? 'Nouveau mot de passe — Belle Maison Pro' : 'Nouveau mot de passe — Belle Maison') %}
+{% set page_title = is_pro ? 'auth.reset_pro.page_title'|trans : 'auth.reset_user.page_title'|trans %}
 
 {% block body %}
 <section class="container bm-container" aria-labelledby="resetPasswordTitle">
@@ -11,10 +12,10 @@
                 <div class="col-lg-5">
                     <div class="bm-auth-visual {{ is_pro ? '' : 'bm-auth-visual-user' }}">
                         <div class="bm-auth-visual-inner">
-                            <span class="bm-auth-brand-mark"><i class="bi bi-lock"></i> {{ is_pro ? 'Espace professionnel' : 'Espace client' }}</span>
+                            <span class="bm-auth-brand-mark"><i class="bi bi-lock"></i> {{ (is_pro ? 'auth.login_pro.brand' : 'auth.login_user.brand')|trans }}</span>
                             <div class="bm-auth-visual-copy">
-                                <h1 id="resetPasswordTitle">Créez un nouveau mot de passe.</h1>
-                                <p>Choisissez un mot de passe long et unique pour protéger durablement votre compte Belle Maison.</p>
+                                <h1 id="resetPasswordTitle">{{ 'auth.reset.title'|trans }}</h1>
+                                <p>{{ 'auth.reset.subtitle'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -24,27 +25,27 @@
                         <div class="bm-auth-compact-card">
                             {{ include('components/_flash_messages.html.twig') }}
                             <div class="bm-auth-card-head">
-                                <span class="bm-auth-badge"><i class="bi bi-key"></i> Nouveau mot de passe</span>
-                                <h2>Réinitialiser votre mot de passe</h2>
-                                <p>Utilisez au moins 12 caractères pour un niveau de sécurité solide.</p>
+                                <span class="bm-auth-badge"><i class="bi bi-key"></i> {{ 'auth.reset.badge'|trans }}</span>
+                                <h2>{{ 'auth.reset.heading'|trans }}</h2>
+                                <p>{{ 'auth.reset.description'|trans }}</p>
                             </div>
                             {{ form_start(resetForm, {attr: {class: 'bm-auth-form', novalidate: 'novalidate'}}) }}
                             {{ form_errors(resetForm) }}
                             <div class="mb-3">
-                                <label class="form-label bm-label" for="{{ resetForm.plainPassword.first.vars.id }}">Nouveau mot de passe</label>
-                                <div class="bm-auth-field"><i class="bi bi-lock"></i>{{ form_widget(resetForm.plainPassword.first, {attr: {class: 'form-control bm-auth-input', placeholder: '12 caractères minimum'}}) }}</div>
+                                <label class="form-label bm-label" for="{{ resetForm.plainPassword.first.vars.id }}">{{ 'auth.reset.new_password'|trans }}</label>
+                                <div class="bm-auth-field"><i class="bi bi-lock"></i>{{ form_widget(resetForm.plainPassword.first, {attr: {class: 'form-control bm-auth-input', placeholder: 'auth.reset.new_password_placeholder'|trans}}) }}</div>
                                 {{ form_errors(resetForm.plainPassword.first) }}
                             </div>
                             <div class="mb-3">
-                                <label class="form-label bm-label" for="{{ resetForm.plainPassword.second.vars.id }}">Confirmer le mot de passe</label>
-                                <div class="bm-auth-field"><i class="bi bi-shield-lock"></i>{{ form_widget(resetForm.plainPassword.second, {attr: {class: 'form-control bm-auth-input', placeholder: 'Retapez votre mot de passe'}}) }}</div>
+                                <label class="form-label bm-label" for="{{ resetForm.plainPassword.second.vars.id }}">{{ 'auth.reset.confirm_password'|trans }}</label>
+                                <div class="bm-auth-field"><i class="bi bi-shield-lock"></i>{{ form_widget(resetForm.plainPassword.second, {attr: {class: 'form-control bm-auth-input', placeholder: 'auth.reset.confirm_password_placeholder'|trans}}) }}</div>
                                 {{ form_errors(resetForm.plainPassword.second) }}
                             </div>
-                            <button class="btn bm-btn bm-btn-primary bm-auth-submit" type="submit">Enregistrer mon nouveau mot de passe</button>
+                            <button class="btn bm-btn bm-btn-primary bm-auth-submit" type="submit">{{ 'auth.reset.submit'|trans }}</button>
                             {{ form_end(resetForm) }}
                             <div class="bm-auth-mini-footer">
-                                <span>Vous préférez revenir à la connexion ?</span>
-                                <a href="{{ path(login_route) }}">Retour à la connexion</a>
+                                <span>{{ 'auth.reset.footer_title'|trans }}</span>
+                                <a href="{{ locale_path(login_route) }}">{{ 'auth.reset.back_to_login'|trans }}</a>
                             </div>
                         </div>
                     </div>

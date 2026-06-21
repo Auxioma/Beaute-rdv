@@ -15,6 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 final class RegisterUserController extends AbstractController
 {
@@ -24,6 +25,7 @@ final class RegisterUserController extends AbstractController
         UserRepository $userRepository,
         RegistrationManager $registrationManager,
         EmailVerifier $emailVerifier,
+        TranslatorInterface $translator,
     ): Response {
         $form = $this->createForm(RegisterUserFormType::class, new RegisterUserData());
         $form->handleRequest($request);
@@ -42,14 +44,14 @@ final class RegisterUserController extends AbstractController
                         (new TemplatedEmail())
                             ->from(new Address('hello@rebel-refine.pro', 'Belle Maison'))
                             ->to((string) $existingUser->getEmail())
-                            ->subject('Validez votre adresse email')
+                            ->subject($translator->trans('auth.email.verify.subject'))
                             ->htmlTemplate('emails/verify_email.html.twig')
                             ->context([
                                 'user' => $existingUser,
                             ])
                     );
 
-                    $this->addFlash('success', 'Un nouvel email de validation vient d’être envoyé.');
+                    $this->addFlash('success', $translator->trans('auth.flash.verify_email_resent'));
 
                     return $this->redirectToRoute('app_login_user', [
                         '_locale' => $request->getLocale(),
@@ -66,14 +68,14 @@ final class RegisterUserController extends AbstractController
                     (new TemplatedEmail())
                         ->from(new Address('hello@rebel-refine.pro', 'Belle Maison'))
                         ->to((string) $user->getEmail())
-                        ->subject('Validez votre adresse email')
+                        ->subject($translator->trans('auth.email.verify.subject'))
                         ->htmlTemplate('emails/verify_email.html.twig')
                         ->context([
                             'user' => $user,
                         ])
                 );
 
-                $this->addFlash('success', 'Votre compte client a bien été créé. Vérifiez maintenant votre email pour l’activer.');
+                $this->addFlash('success', $translator->trans('auth.flash.user_registered_check_email'));
 
                 return $this->redirectToRoute('app_login_user', [
                     '_locale' => $request->getLocale(),

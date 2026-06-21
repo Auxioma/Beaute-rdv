@@ -2,7 +2,7 @@
 
 {% block layout %}
     {% include '_partials/header/_public_header.html.twig' %}
-    <main{% if main_class|default('') is not empty %} class="{{ main_class }}"{% endif %}>
+    <main id="main-content"{% if main_class|default('') is not empty %} class="{{ main_class }}"{% endif %}>
         {% block body %}{% endblock %}
     </main>
     {% include '_partials/footer/_public_footer.html.twig' %}

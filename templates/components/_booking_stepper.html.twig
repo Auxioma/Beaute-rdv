@@ -8,7 +8,7 @@
 
 <div class="bm-booking-stepper">
     {% for step in steps %}
-        <a href="{{ path(step.route) }}" class="bm-booking-step {{ app.request.attributes.get('_route') == step.route ? 'is-active' : '' }}">
+        <a href="{{ locale_path(step.route) }}" class="bm-booking-step {{ app.request.attributes.get('_route') == step.route ? 'is-active' : '' }}">
             <span>{{ loop.index }}</span>
             <em>{{ step.label }}</em>
         </a>

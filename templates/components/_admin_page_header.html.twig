@@ -18,7 +18,7 @@
     </div>
     <div class="bm-admin-topbar-actions">
         {% if cta_label|default(null) and cta_route|default(null) %}
-            <a class="btn bm-btn bm-btn-primary" href="{{ path(cta_route) }}"><i class="bi bi-plus-lg me-2"></i>{{ cta_label }}</a>
+            <a class="btn bm-btn bm-btn-primary" href="{{ locale_path(cta_route) }}"><i class="bi bi-plus-lg me-2"></i>{{ cta_label }}</a>
         {% endif %}
     </div>
 </header>

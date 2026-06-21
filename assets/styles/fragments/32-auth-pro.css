@@ -173,6 +173,33 @@
   color: #746d63;
 }
 
+.bm-auth-form-fields {
+  display: grid;
+  gap: 1rem;
+}
+
+.bm-auth-form-grid {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 1rem;
+  margin: 0;
+}
+
+.bm-auth-tail {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 1.25rem;
+}
+.bm-auth-tail > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bm-auth-tail .bm-auth-note,
+.bm-auth-tail .bm-auth-secondary-action,
+.bm-auth-tail .bm-auth-mini-footer,
+.bm-auth-tail .bm-auth-help-grid {
+  margin-top: 0;
+}
+
 .bm-auth-field {
   position: relative;
 }
@@ -275,7 +302,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin: 1.4rem 0;
+  margin: 0;
   color: #938a7f;
   font-size: 0.86rem;
   font-weight: 800;
@@ -312,7 +339,7 @@
 .bm-auth-note {
   display: flex;
   gap: 0.8rem;
-  margin-top: 1rem;
+  margin-top: 0;
   padding: 1rem;
   border: 1px solid rgba(7, 79, 61, 0.16);
   border-radius: 1.1rem;
@@ -335,7 +362,6 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.9rem;
-  margin-top: 1.2rem;
 }
 
 .bm-auth-help-card {
@@ -420,7 +446,6 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
-  margin-top: 1.2rem;
   color: #746d63;
   font-size: 0.9rem;
 }

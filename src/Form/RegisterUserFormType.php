@@ -22,30 +22,30 @@ final class RegisterUserFormType extends AbstractType
         $builder
             ->add('firstname', TextType::class, [
                 'constraints' => [
-                    new NotBlank(message: 'Veuillez renseigner votre prénom.'),
+                    new NotBlank(message: 'auth.validation.firstname_required'),
                     new Length(max: 120),
                 ],
             ])
             ->add('lastname', TextType::class, [
                 'constraints' => [
-                    new NotBlank(message: 'Veuillez renseigner votre nom.'),
+                    new NotBlank(message: 'auth.validation.lastname_required'),
                     new Length(max: 120),
                 ],
             ])
             ->add('email', EmailType::class, [
                 'constraints' => [
-                    new NotBlank(message: 'Veuillez renseigner votre adresse email.'),
-                    new Email(message: 'Veuillez saisir une adresse email valide.'),
+                    new NotBlank(message: 'auth.validation.email_required'),
+                    new Email(message: 'auth.validation.email_invalid'),
                     new Length(max: 180),
                 ],
             ])
             ->add('plainPassword', PasswordType::class, [
                 'constraints' => [
-                    new NotBlank(message: 'Veuillez renseigner un mot de passe.'),
+                    new NotBlank(message: 'auth.validation.password_required'),
                     new Length(
                         min: 8,
                         max: 4096,
-                        minMessage: 'Votre mot de passe doit contenir au moins {{ limit }} caractères.',
+                        minMessage: 'auth.validation.password_min',
                     ),
                 ],
             ])
@@ -60,7 +60,7 @@ final class RegisterUserFormType extends AbstractType
             ])
             ->add('agreeTerms', CheckboxType::class, [
                 'constraints' => [
-                    new IsTrue(message: 'Vous devez accepter les conditions pour créer votre compte.'),
+                    new IsTrue(message: 'auth.validation.user_terms_required'),
                 ],
             ]);
     }

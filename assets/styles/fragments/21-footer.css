@@ -25,11 +25,12 @@
 .bm-footer li + li {
   margin-top: 0.55rem;
 }
-.bm-footer a:not(.bm-brand) {
+.bm-footer a:not(.bm-footer-brand) {
+  display: inline-flex;
   color: #746d63;
   font-weight: 600;
 }
-.bm-footer a:not(.bm-brand):hover {
+.bm-footer a:not(.bm-footer-brand):hover {
   color: #074f3d;
 }
 

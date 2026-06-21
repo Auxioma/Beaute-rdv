@@ -1,7 +1,8 @@
 {% extends 'layouts/auth.html.twig' %}
+{% trans_default_domain 'messages' %}
 {% set body_class = is_pro ? 'bm-page-auth-pro' : 'bm-page-auth-user' %}
 {% set main_class = is_pro ? 'bm-auth-main' : 'bm-auth-main bm-auth-main-user' %}
-{% set page_title = page_title|default(is_pro ? 'Email envoyé — Belle Maison Pro' : 'Email envoyé — Belle Maison') %}
+{% set page_title = is_pro ? 'auth.check_email_pro.page_title'|trans : 'auth.check_email_user.page_title'|trans %}
 
 {% block body %}
 <section class="container bm-container" aria-labelledby="checkEmailTitle">
@@ -11,10 +12,10 @@
                 <div class="col-lg-5">
                     <div class="bm-auth-visual {{ is_pro ? '' : 'bm-auth-visual-user' }}">
                         <div class="bm-auth-visual-inner">
-                            <span class="bm-auth-brand-mark"><i class="bi bi-envelope-paper-heart"></i> {{ is_pro ? 'Espace professionnel' : 'Espace client' }}</span>
+                            <span class="bm-auth-brand-mark"><i class="bi bi-envelope-paper-heart"></i> {{ (is_pro ? 'auth.forgot_pro.brand' : 'auth.forgot_user.brand')|trans }}</span>
                             <div class="bm-auth-visual-copy">
-                                <h1 id="checkEmailTitle">Vérifiez votre boîte email.</h1>
-                                <p>Si un compte existe, un lien sécurisé vient d’être envoyé pour vous permettre de choisir un nouveau mot de passe.</p>
+                                <h1 id="checkEmailTitle">{{ 'auth.check_email.title'|trans }}</h1>
+                                <p>{{ 'auth.check_email.subtitle'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -24,21 +25,21 @@
                         <div class="bm-auth-compact-card">
                             {{ include('components/_flash_messages.html.twig') }}
                             <div class="bm-auth-card-head">
-                                <span class="bm-auth-badge"><i class="bi bi-shield-check"></i> Email envoyé</span>
-                                <h2>Consultez votre messagerie</h2>
-                                <p>Le lien de réinitialisation expire {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.</p>
+                                <span class="bm-auth-badge"><i class="bi bi-shield-check"></i> {{ 'auth.check_email.badge'|trans }}</span>
+                                <h2>{{ 'auth.check_email.heading'|trans }}</h2>
+                                <p>{{ 'auth.check_email.expiration_prefix'|trans }} {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.</p>
                             </div>
                             <div class="bm-auth-note">
                                 <i class="bi bi-info-circle"></i>
-                                <div><strong>Vous ne voyez rien ?</strong> Pensez à vérifier vos spams ou à refaire une demande dans quelques minutes.</div>
+                                <div><strong>{{ 'auth.check_email.note_title'|trans }}</strong> {{ 'auth.check_email.note_text'|trans }}</div>
                             </div>
                             <div class="bm-auth-secondary-action {{ is_pro ? '' : 'bm-auth-secondary-action-user' }}">
-                                <div><strong>Besoin d’un nouvel envoi ?</strong><span>Vous pouvez recommencer la procédure si nécessaire.</span></div>
-                                <a class="btn bm-btn bm-btn-outline" href="{{ path(forgot_route) }}">Refaire une demande</a>
+                                <div><strong>{{ 'auth.check_email.cta_title'|trans }}</strong><span>{{ 'auth.check_email.cta_text'|trans }}</span></div>
+                                <a class="btn bm-btn bm-btn-outline" href="{{ locale_path(forgot_route) }}">{{ 'auth.check_email.cta_button'|trans }}</a>
                             </div>
                             <div class="bm-auth-mini-footer">
-                                <span>Vous avez retrouvé votre mot de passe ?</span>
-                                <a href="{{ path(login_route) }}">Retour à la connexion</a>
+                                <span>{{ 'auth.check_email.footer_title'|trans }}</span>
+                                <a href="{{ locale_path(login_route) }}">{{ 'auth.reset.back_to_login'|trans }}</a>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 {% extends 'layouts/auth.html.twig' %}
-{% set page_title = 'Créer un compte client — Belle Maison' %}
-{% set meta_description = 'Créez votre compte Belle Maison pour réserver plus vite vos rendez-vous beauté, enregistrer vos salons favoris, recevoir vos confirmations et gérer vos préférences.' %}
+{% trans_default_domain 'messages' %}
+{% set page_title = 'auth.register_user.page_title'|trans %}
+{% set meta_description = 'auth.register_user.meta_description'|trans %}
 {% set body_class = 'bm-page-auth-user' %}
 {% set main_class = 'bm-auth-main bm-auth-main-user' %}
 
@@ -11,14 +12,14 @@
 <div class="col-xl-6">
 <div class="bm-auth-visual bm-auth-visual-user">
 <div class="bm-auth-visual-inner">
-<span class="bm-auth-brand-mark"><i class="bi bi-heart"></i> Compte client</span>
+<span class="bm-auth-brand-mark"><i class="bi bi-heart"></i> {{ 'auth.register_user.brand'|trans }}</span>
 <div class="bm-auth-visual-copy">
-<h1 id="registerUserTitle">Vos rendez-vous beauté, enfin réunis.</h1>
-<p>Créez votre espace personnel pour retrouver vos salons favoris, suivre vos réservations et recevoir vos confirmations au bon moment.</p>
+<h1 id="registerUserTitle">{{ 'auth.register_user.title'|trans }}</h1>
+<p>{{ 'auth.register_user.subtitle'|trans }}</p>
 <div aria-label="Avantages compte client" class="bm-auth-proof-row bm-auth-proof-row-user">
-<div class="bm-auth-proof"><strong>Réserver plus vite</strong><span>Vos informations restent prêtes pour vos prochains rendez-vous.</span></div>
-<div class="bm-auth-proof"><strong>Salons favoris</strong><span>Gardez une sélection de professionnels à retrouver facilement.</span></div>
-<div class="bm-auth-proof"><strong>Suivi clair</strong><span>Retrouvez les confirmations, horaires et détails de vos prestations.</span></div>
+<div class="bm-auth-proof"><strong>{{ 'auth.register_user.benefit_1'|trans }}</strong><span>{{ 'auth.register_user.benefit_1_text'|trans }}</span></div>
+<div class="bm-auth-proof"><strong>{{ 'auth.register_user.benefit_2'|trans }}</strong><span>{{ 'auth.register_user.benefit_2_text'|trans }}</span></div>
+<div class="bm-auth-proof"><strong>{{ 'auth.register_user.benefit_3'|trans }}</strong><span>{{ 'auth.register_user.benefit_3_text'|trans }}</span></div>
 </div>
 </div>
 </div>
@@ -28,64 +29,66 @@
 <div class="bm-auth-panel">
 <div class="bm-auth-card bm-auth-card-user">
 <div class="bm-auth-card-head">
-<span class="bm-auth-badge"><i class="bi bi-person-check"></i> Inscription gratuite</span>
-<h2>Créer votre compte</h2>
-<p>Quelques informations suffisent pour préparer votre espace client et simplifier vos futures réservations.</p>
+<span class="bm-auth-badge"><i class="bi bi-person-check"></i> {{ 'auth.register_user.badge'|trans }}</span>
+<h2>{{ 'auth.register_user.heading'|trans }}</h2>
+<p>{{ 'auth.register_user.description'|trans }}</p>
 </div>
 {{ include('components/_flash_messages.html.twig') }}
 {{ form_start(registrationForm, {attr: {class: 'bm-auth-form', novalidate: 'novalidate'}}) }}
 {{ form_errors(registrationForm) }}
-<div class="row g-3">
+<div class="row g-3 bm-auth-form-grid">
 <div class="col-md-6">
-<label class="form-label bm-label" for="{{ registrationForm.firstname.vars.id }}">Prénom</label>
-<div class="bm-auth-field"><i class="bi bi-person"></i>{{ form_widget(registrationForm.firstname, {attr: {autocomplete: 'given-name', class: 'form-control bm-auth-input', placeholder: 'Camille'}}) }}</div>
+<label class="form-label bm-label" for="{{ registrationForm.firstname.vars.id }}">{{ 'auth.common.firstname'|trans }}</label>
+<div class="bm-auth-field"><i class="bi bi-person"></i>{{ form_widget(registrationForm.firstname, {attr: {autocomplete: 'given-name', class: 'form-control bm-auth-input', placeholder: 'auth.register_user.firstname_placeholder'|trans}}) }}</div>
 {{ form_errors(registrationForm.firstname) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="{{ registrationForm.lastname.vars.id }}">Nom</label>
-<div class="bm-auth-field"><i class="bi bi-person"></i>{{ form_widget(registrationForm.lastname, {attr: {autocomplete: 'family-name', class: 'form-control bm-auth-input', placeholder: 'Martin'}}) }}</div>
+<label class="form-label bm-label" for="{{ registrationForm.lastname.vars.id }}">{{ 'auth.common.lastname'|trans }}</label>
+<div class="bm-auth-field"><i class="bi bi-person"></i>{{ form_widget(registrationForm.lastname, {attr: {autocomplete: 'family-name', class: 'form-control bm-auth-input', placeholder: 'auth.register_user.lastname_placeholder'|trans}}) }}</div>
 {{ form_errors(registrationForm.lastname) }}
 </div>
 <div class="col-12">
-<label class="form-label bm-label" for="{{ registrationForm.email.vars.id }}">Adresse email</label>
-<div class="bm-auth-field"><i class="bi bi-envelope"></i>{{ form_widget(registrationForm.email, {attr: {autocomplete: 'email', class: 'form-control bm-auth-input', placeholder: 'camille@email.fr'}}) }}</div>
+<label class="form-label bm-label" for="{{ registrationForm.email.vars.id }}">{{ 'auth.common.email'|trans }}</label>
+<div class="bm-auth-field"><i class="bi bi-envelope"></i>{{ form_widget(registrationForm.email, {attr: {autocomplete: 'email', class: 'form-control bm-auth-input', placeholder: 'auth.login_user.email_placeholder'|trans}}) }}</div>
 {{ form_errors(registrationForm.email) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="{{ registrationForm.plainPassword.vars.id }}">Mot de passe</label>
-<div class="bm-auth-field"><i class="bi bi-lock"></i>{{ form_widget(registrationForm.plainPassword, {attr: {autocomplete: 'new-password', class: 'form-control bm-auth-input', placeholder: '8 caractères minimum'}}) }}</div>
+<label class="form-label bm-label" for="{{ registrationForm.plainPassword.vars.id }}">{{ 'auth.common.password'|trans }}</label>
+<div class="bm-auth-field"><i class="bi bi-lock"></i>{{ form_widget(registrationForm.plainPassword, {attr: {autocomplete: 'new-password', class: 'form-control bm-auth-input', placeholder: 'auth.register_user.password_placeholder'|trans}}) }}</div>
 {{ form_errors(registrationForm.plainPassword) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="{{ registrationForm.defaultCity.vars.id }}">Ville principale</label>
-<div class="bm-auth-field"><i class="bi bi-geo-alt"></i>{{ form_widget(registrationForm.defaultCity, {attr: {autocomplete: 'address-level2', class: 'form-control bm-auth-input', placeholder: 'Le Havre'}}) }}</div>
+<label class="form-label bm-label" for="{{ registrationForm.defaultCity.vars.id }}">{{ 'auth.common.primary_city'|trans }}</label>
+<div class="bm-auth-field"><i class="bi bi-geo-alt"></i>{{ form_widget(registrationForm.defaultCity, {attr: {autocomplete: 'address-level2', class: 'form-control bm-auth-input', placeholder: 'auth.register_user.city_placeholder'|trans}}) }}</div>
 {{ form_errors(registrationForm.defaultCity) }}
 </div>
 </div>
 <label class="bm-auth-check bm-auth-check-large" for="{{ registrationForm.marketingEmailConsent.vars.id }}">
 {{ form_widget(registrationForm.marketingEmailConsent, {attr: {class: 'form-check-input'}}) }}
-<span>Je souhaite recevoir par email les nouveautés, sélections et offres Belle Maison.</span>
+<span>{{ 'auth.register_user.marketing_optin'|trans }}</span>
 </label>
 {{ form_errors(registrationForm.marketingEmailConsent) }}
 <label class="bm-auth-check bm-auth-check-large" for="{{ registrationForm.agreeTerms.vars.id }}">
 {{ form_widget(registrationForm.agreeTerms, {attr: {class: 'form-check-input'}}) }}
-<span>J’accepte les conditions d’utilisation et la politique de confidentialité.</span>
+<span>{{ 'auth.register_user.agree_terms'|trans }}</span>
 </label>
 {{ form_errors(registrationForm.agreeTerms) }}
-<button class="btn bm-btn bm-btn-primary bm-auth-submit" type="submit">Créer mon compte</button>
+<button class="btn bm-btn bm-btn-primary bm-auth-submit" type="submit">{{ 'auth.register_user.submit'|trans }}</button>
 {{ form_end(registrationForm) }}
-<div class="bm-auth-divider">ou</div>
+<div class="bm-auth-tail">
+<div class="bm-auth-divider">{{ 'auth.common.or'|trans }}</div>
 <div class="bm-auth-social-grid">
-<a aria-disabled="true" class="bm-auth-social-btn" href="#"><i class="bi bi-google"></i> Continuer avec Google</a>
-<a aria-disabled="true" class="bm-auth-social-btn" href="#"><i class="bi bi-apple"></i> Continuer avec Apple</a>
+<a aria-disabled="true" class="bm-auth-social-btn" href="#"><i class="bi bi-google"></i> {{ 'auth.social.google'|trans }}</a>
+<a aria-disabled="true" class="bm-auth-social-btn" href="#"><i class="bi bi-apple"></i> {{ 'auth.social.apple'|trans }}</a>
 </div>
 <div class="bm-auth-mini-footer">
-<span>Vous avez déjà un compte ?</span>
-<a href="{{ path('app_login_user') }}">Se connecter</a>
+<span>{{ 'auth.register_user.footer_title'|trans }}</span>
+<a href="{{ locale_path('app_login_user') }}">{{ 'auth.login_user.submit'|trans }}</a>
 </div>
 <div class="bm-auth-note">
 <i class="bi bi-shield-check"></i>
-<div><strong>Vos données restent protégées.</strong> Elles servent uniquement à faciliter vos réservations et vos notifications de rendez-vous.</div>
+<div><strong>{{ 'auth.register_user.note_title'|trans }}</strong> {{ 'auth.register_user.note_text'|trans }}</div>
+</div>
 </div>
 </div>
 </div>
