@@ -13,6 +13,7 @@ final class EmailResetPasswordProController extends AbstractController
         {
             return $this->render('emails/reset_password_pro.html.twig', [
                 'page_title' => 'Mot de passe pro',
+                'resetUrl' => '#',
             ]);
         }
 }

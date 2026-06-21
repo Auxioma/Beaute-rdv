@@ -13,6 +13,7 @@ final class EmailResetPasswordUserController extends AbstractController
         {
             return $this->render('emails/reset_password_user.html.twig', [
                 'page_title' => 'Réinitialisation de mot de passe',
+                'resetUrl' => '#',
             ]);
         }
 }

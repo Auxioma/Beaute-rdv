@@ -1,0 +1,30 @@
+{% extends 'layouts/email.html.twig' %}
+
+{% block body %}
+<div class="wrap">
+    <div class="card">
+        <div class="brand">BELLE MAISON</div>
+        <h1>Confirmez votre adresse email</h1>
+        <p>
+            Bonjour {{ user.firstname|default('') ?: 'et bienvenue' }},
+            votre compte Belle Maison a bien été créé.
+        </p>
+        <p>
+            Pour activer votre accès et sécuriser votre compte, veuillez confirmer votre adresse email en cliquant sur le bouton ci-dessous.
+        </p>
+
+        <div class="box">
+            <a class="btn" href="{{ signedUrl }}">Valider mon adresse email</a>
+        </div>
+
+        <p>
+            Ce lien expire
+            {{ expiresAtMessageKey|trans(expiresAtMessageData, 'VerifyEmailBundle') }}.
+        </p>
+
+        <p class="muted">
+            Si vous n’êtes pas à l’origine de cette inscription, vous pouvez ignorer cet email.
+        </p>
+    </div>
+</div>
+{% endblock %}

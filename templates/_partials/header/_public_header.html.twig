@@ -19,8 +19,17 @@
                 </ul>
 
                 <div class="bm-header-actions d-flex align-items-center gap-2">
-                    <a href="{{ path('app_login_user') }}" class="btn bm-btn bm-btn-outline">Se connecter</a>
-                    <a href="{{ path('app_register_pro') }}" class="btn bm-btn bm-btn-primary">Inscrire mon salon</a>
+                    {% if app.user %}
+                        {% if is_granted('ROLE_PRO') %}
+                            <a href="{{ path('app_dashboard_pro') }}" class="btn bm-btn bm-btn-outline">Espace pro</a>
+                        {% else %}
+                            <a href="{{ path('app_account_user') }}" class="btn bm-btn bm-btn-outline">Mon compte</a>
+                        {% endif %}
+                        <a href="{{ path('app_logout') }}" class="btn bm-btn bm-btn-primary">Se déconnecter</a>
+                    {% else %}
+                        <a href="{{ path('app_login_user') }}" class="btn bm-btn bm-btn-outline">Se connecter</a>
+                        <a href="{{ path('app_register_pro') }}" class="btn bm-btn bm-btn-primary">Inscrire mon salon</a>
+                    {% endif %}
                     {% include '_partials/i18n/_locale_switcher.html.twig' %}
                 </div>
             </div>

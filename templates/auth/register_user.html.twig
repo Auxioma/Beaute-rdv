@@ -32,48 +32,52 @@
 <h2>Créer votre compte</h2>
 <p>Quelques informations suffisent pour préparer votre espace client et simplifier vos futures réservations.</p>
 </div>
-<form action="#" class="bm-auth-form" method="post" novalidate="">
+{{ include('components/_flash_messages.html.twig') }}
+{{ form_start(registrationForm, {attr: {class: 'bm-auth-form', novalidate: 'novalidate'}}) }}
+{{ form_errors(registrationForm) }}
 <div class="row g-3">
 <div class="col-md-6">
-<label class="form-label bm-label" for="firstName">Prénom</label>
-<div class="bm-auth-field"><i class="bi bi-person"></i><input autocomplete="given-name" class="form-control bm-auth-input" id="firstName" name="firstName" placeholder="Camille" required="" type="text"/></div>
+<label class="form-label bm-label" for="{{ registrationForm.firstname.vars.id }}">Prénom</label>
+<div class="bm-auth-field"><i class="bi bi-person"></i>{{ form_widget(registrationForm.firstname, {attr: {autocomplete: 'given-name', class: 'form-control bm-auth-input', placeholder: 'Camille'}}) }}</div>
+{{ form_errors(registrationForm.firstname) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="lastName">Nom</label>
-<div class="bm-auth-field"><i class="bi bi-person"></i><input autocomplete="family-name" class="form-control bm-auth-input" id="lastName" name="lastName" placeholder="Martin" required="" type="text"/></div>
+<label class="form-label bm-label" for="{{ registrationForm.lastname.vars.id }}">Nom</label>
+<div class="bm-auth-field"><i class="bi bi-person"></i>{{ form_widget(registrationForm.lastname, {attr: {autocomplete: 'family-name', class: 'form-control bm-auth-input', placeholder: 'Martin'}}) }}</div>
+{{ form_errors(registrationForm.lastname) }}
 </div>
 <div class="col-12">
-<label class="form-label bm-label" for="registerEmail">Adresse email</label>
-<div class="bm-auth-field"><i class="bi bi-envelope"></i><input autocomplete="email" class="form-control bm-auth-input" id="registerEmail" name="email" placeholder="camille@email.fr" required="" type="email"/></div>
+<label class="form-label bm-label" for="{{ registrationForm.email.vars.id }}">Adresse email</label>
+<div class="bm-auth-field"><i class="bi bi-envelope"></i>{{ form_widget(registrationForm.email, {attr: {autocomplete: 'email', class: 'form-control bm-auth-input', placeholder: 'camille@email.fr'}}) }}</div>
+{{ form_errors(registrationForm.email) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="registerPassword">Mot de passe</label>
-<div class="bm-auth-field"><i class="bi bi-lock"></i><input autocomplete="new-password" class="form-control bm-auth-input" id="registerPassword" name="password" placeholder="8 caractères minimum" required="" type="password"/></div>
+<label class="form-label bm-label" for="{{ registrationForm.plainPassword.vars.id }}">Mot de passe</label>
+<div class="bm-auth-field"><i class="bi bi-lock"></i>{{ form_widget(registrationForm.plainPassword, {attr: {autocomplete: 'new-password', class: 'form-control bm-auth-input', placeholder: '8 caractères minimum'}}) }}</div>
+{{ form_errors(registrationForm.plainPassword) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="registerCity">Ville principale</label>
-<div class="bm-auth-field"><i class="bi bi-geo-alt"></i><input autocomplete="address-level2" class="form-control bm-auth-input" id="registerCity" name="city" placeholder="Le Havre" type="text"/></div>
+<label class="form-label bm-label" for="{{ registrationForm.defaultCity.vars.id }}">Ville principale</label>
+<div class="bm-auth-field"><i class="bi bi-geo-alt"></i>{{ form_widget(registrationForm.defaultCity, {attr: {autocomplete: 'address-level2', class: 'form-control bm-auth-input', placeholder: 'Le Havre'}}) }}</div>
+{{ form_errors(registrationForm.defaultCity) }}
 </div>
 </div>
-<div aria-label="Préférences beauté" class="bm-user-preferences">
-<p>Vos centres d’intérêt</p>
-<div class="bm-user-preference-grid">
-<label><input name="preferences[]" type="checkbox" value="coiffure"/> <span>Coiffure</span></label>
-<label><input name="preferences[]" type="checkbox" value="barbier"/> <span>Barbier</span></label>
-<label><input name="preferences[]" type="checkbox" value="ongles"/> <span>Ongles</span></label>
-<label><input name="preferences[]" type="checkbox" value="spa"/> <span>Spa</span></label>
-</div>
-</div>
-<label class="bm-auth-check bm-auth-check-large" for="termsAccepted">
-<input class="form-check-input" id="termsAccepted" name="terms" required="" type="checkbox"/>
+<label class="bm-auth-check bm-auth-check-large" for="{{ registrationForm.marketingEmailConsent.vars.id }}">
+{{ form_widget(registrationForm.marketingEmailConsent, {attr: {class: 'form-check-input'}}) }}
+<span>Je souhaite recevoir par email les nouveautés, sélections et offres Belle Maison.</span>
+</label>
+{{ form_errors(registrationForm.marketingEmailConsent) }}
+<label class="bm-auth-check bm-auth-check-large" for="{{ registrationForm.agreeTerms.vars.id }}">
+{{ form_widget(registrationForm.agreeTerms, {attr: {class: 'form-check-input'}}) }}
 <span>J’accepte les conditions d’utilisation et la politique de confidentialité.</span>
 </label>
+{{ form_errors(registrationForm.agreeTerms) }}
 <button class="btn bm-btn bm-btn-primary bm-auth-submit" type="submit">Créer mon compte</button>
-</form>
+{{ form_end(registrationForm) }}
 <div class="bm-auth-divider">ou</div>
 <div class="bm-auth-social-grid">
-<a class="bm-auth-social-btn" href="#"><i class="bi bi-google"></i> Continuer avec Google</a>
-<a class="bm-auth-social-btn" href="#"><i class="bi bi-apple"></i> Continuer avec Apple</a>
+<a aria-disabled="true" class="bm-auth-social-btn" href="#"><i class="bi bi-google"></i> Continuer avec Google</a>
+<a aria-disabled="true" class="bm-auth-social-btn" href="#"><i class="bi bi-apple"></i> Continuer avec Apple</a>
 </div>
 <div class="bm-auth-mini-footer">
 <span>Vous avez déjà un compte ?</span>

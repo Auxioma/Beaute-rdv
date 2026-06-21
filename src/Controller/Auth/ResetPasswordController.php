@@ -4,87 +4,97 @@ namespace App\Controller\Auth;
 
 use App\Entity\Auth\User;
 use App\Form\ChangePasswordFormType;
-use App\Form\ResetPasswordRequestFormType;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Mime\Address;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use SymfonyCasts\Bundle\ResetPassword\Controller\ResetPasswordControllerTrait;
 use SymfonyCasts\Bundle\ResetPassword\Exception\ResetPasswordExceptionInterface;
-use SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface;#[Route('/reset-password')]
+use SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface;
+
 final class ResetPasswordController extends AbstractController
 {
     use ResetPasswordControllerTrait;
 
-        public function __construct(
-            private ResetPasswordHelperInterface $resetPasswordHelper,
-            private EntityManagerInterface $entityManager,
-        ) {
-        }
+    public function __construct(
+        private readonly ResetPasswordHelperInterface $resetPasswordHelper,
+        private readonly EntityManagerInterface $entityManager,
+    ) {
+    }
 
-    /**
-         * Validates and process the reset URL that the user clicked in their email.
-         */
-        #[Route('/reset/{token}', name: 'app_reset_password', defaults: ['token' => null])]
-        public function reset(Request $request, UserPasswordHasherInterface $passwordHasher, TranslatorInterface $translator, ?string $token = null): Response
-        {
-            if ($token) {
-                // We store the token in session and remove it from the URL, to avoid the URL being
-                // loaded in a browser and potentially leaking the token to 3rd party JavaScript.
-                $this->storeTokenInSession($token);
+    #[Route('/reset-password/reset/{token}', name: 'app_reset_password', defaults: ['token' => null], methods: ['GET', 'POST'])]
+    public function resetFallback(Request $request, UserPasswordHasherInterface $passwordHasher, TranslatorInterface $translator, ?string $token = null): Response
+    {
+        return $this->handleReset('user', $request, $passwordHasher, $translator, $token);
+    }
 
-                return $this->redirectToRoute('app_reset_password');
-            }
+    #[Route('/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/password/reset/{token}', name: 'app_reset_password_user', defaults: ['token' => null], methods: ['GET', 'POST'])]
+    public function resetUser(Request $request, UserPasswordHasherInterface $passwordHasher, TranslatorInterface $translator, ?string $token = null): Response
+    {
+        return $this->handleReset('user', $request, $passwordHasher, $translator, $token);
+    }
 
-            $token = $this->getTokenFromSession();
+    #[Route('/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/professionals/password/reset/{token}', name: 'app_reset_password_pro', defaults: ['token' => null], methods: ['GET', 'POST'])]
+    public function resetPro(Request $request, UserPasswordHasherInterface $passwordHasher, TranslatorInterface $translator, ?string $token = null): Response
+    {
+        return $this->handleReset('pro', $request, $passwordHasher, $translator, $token);
+    }
 
-            if (null === $token) {
-                throw $this->createNotFoundException('No reset password token found in the URL or in the session.');
-            }
+    private function handleReset(string $flow, Request $request, UserPasswordHasherInterface $passwordHasher, TranslatorInterface $translator, ?string $token = null): Response
+    {
+        if ($token) {
+            $this->storeTokenInSession($token);
 
-            try {
-                /** @var User $user */
-                $user = $this->resetPasswordHelper->validateTokenAndFetchUser($token);
-            } catch (ResetPasswordExceptionInterface $e) {
-                $this->addFlash('reset_password_error', sprintf(
-                    '%s - %s',
-                    $translator->trans(ResetPasswordExceptionInterface::MESSAGE_PROBLEM_VALIDATE, [], 'ResetPasswordBundle'),
-                    $translator->trans($e->getReason(), [], 'ResetPasswordBundle')
-                ));
-
-                return $this->redirectToRoute('app_forgot_password_request');
-            }
-
-            // The token is valid; allow the user to change their password.
-            $form = $this->createForm(ChangePasswordFormType::class);
-            $form->handleRequest($request);
-
-            if ($form->isSubmitted() && $form->isValid()) {
-                // A password reset token should be used only once, remove it.
-                $this->resetPasswordHelper->removeResetRequest($token);
-
-                /** @var string $plainPassword */
-                $plainPassword = $form->get('plainPassword')->getData();
-
-                // Encode(hash) the plain password, and set it.
-                $user->setPassword($passwordHasher->hashPassword($user, $plainPassword));
-                $this->entityManager->flush();
-
-                // The session is cleaned up after the password has been changed.
-                $this->cleanSessionAfterReset();
-
-                return $this->redirectToRoute('app_login');
-            }
-
-            return $this->render('reset_password/reset.html.twig', [
-                'resetForm' => $form->createView(),
+            return $this->redirectToRoute($flow === 'pro' ? 'app_reset_password_pro' : 'app_reset_password_user', [
+                '_locale' => $request->getLocale(),
             ]);
         }
+
+        $storedToken = $this->getTokenFromSession();
+
+        if (null === $storedToken) {
+            throw $this->createNotFoundException('Aucun jeton de réinitialisation trouvé.');
+        }
+
+        try {
+            /** @var User $user */
+            $user = $this->resetPasswordHelper->validateTokenAndFetchUser($storedToken);
+        } catch (ResetPasswordExceptionInterface $exception) {
+            $this->addFlash('reset_password_error', $translator->trans($exception->getReason(), [], 'ResetPasswordBundle'));
+
+            return $this->redirectToRoute($flow === 'pro' ? 'app_forgot_password' : 'app_forgot_password_user', [
+                '_locale' => $request->getLocale(),
+            ]);
+        }
+
+        $form = $this->createForm(ChangePasswordFormType::class);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->resetPasswordHelper->removeResetRequest($storedToken);
+
+            /** @var string $plainPassword */
+            $plainPassword = $form->get('plainPassword')->getData();
+
+            $user->setPassword($passwordHasher->hashPassword($user, $plainPassword));
+            $this->entityManager->flush();
+
+            $this->cleanSessionAfterReset();
+            $this->addFlash('success', 'Votre mot de passe a bien été réinitialisé. Vous pouvez maintenant vous connecter.');
+
+            return $this->redirectToRoute($user->getType() === User::TYPE_PRO || $user->getType() === User::TYPE_STAFF ? 'app_login_pro' : 'app_login_user', [
+                '_locale' => $user->getLocale(),
+            ]);
+        }
+
+        return $this->render('reset_password/reset.html.twig', [
+            'page_title' => $flow === 'pro' ? 'Nouveau mot de passe — Belle Maison Pro' : 'Nouveau mot de passe — Belle Maison',
+            'is_pro' => $flow === 'pro',
+            'resetForm' => $form->createView(),
+            'login_route' => $flow === 'pro' ? 'app_login_pro' : 'app_login_user',
+        ]);
+    }
 }

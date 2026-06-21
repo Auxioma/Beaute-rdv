@@ -15,7 +15,7 @@
                 Présentez vos prestations, recevez des demandes qualifiées, organisez votre agenda et donnez à vos clients une expérience simple, élégante et rassurante.
               </p>
 <div class="bm-pro-hero-actions d-flex flex-wrap gap-3">
-<a class="btn bm-btn bm-btn-primary" href="#pro-registration-form">Inscrire mon établissement</a>
+<a class="btn bm-btn bm-btn-primary" href="#pro-registration-form">Créer mon espace pro</a>
 <a class="btn bm-btn bm-btn-outline" href="#pro-features">Voir les fonctionnalités</a>
 </div>
 <div aria-label="Bénéfices principaux" class="bm-pro-kpi row g-3">
@@ -34,7 +34,7 @@
 <div class="col-md-4">
 <div class="bm-pro-kpi-item">
 <strong>0 friction</strong>
-<span>Un formulaire court pour être rappelé et préparer votre mise en ligne.</span>
+<span>Un compte créé rapidement avant de compléter votre onboarding professionnel.</span>
 </div>
 </div>
 </div>
@@ -43,84 +43,59 @@
 <div class="col-xl-5">
 <aside aria-labelledby="formTitle" class="bm-pro-form-card" id="pro-registration-form">
 <div class="bm-pro-form-head">
-<span class="bm-form-badge"><i class="bi bi-gem"></i> Démo personnalisée</span>
+<span class="bm-form-badge"><i class="bi bi-gem"></i> Inscription professionnelle</span>
 <h2 id="formTitle">Créer votre espace professionnel</h2>
-<p>Remplissez ces informations. Un conseiller vous recontacte pour valider votre activité, vos prestations et vos besoins.</p>
+<p>Créez votre accès pro maintenant. Vous pourrez compléter les détails de votre établissement juste après.</p>
 </div>
-<form action="#" class="bm-pro-form" method="post" novalidate="">
+{{ include('components/_flash_messages.html.twig') }}
+{{ form_start(registrationForm, {attr: {class: 'bm-pro-form', novalidate: 'novalidate'}}) }}
+{{ form_errors(registrationForm) }}
 <div class="row g-3">
 <div class="col-12">
-<label class="form-label bm-label" for="businessName">Nom de l’établissement</label>
-<input class="form-control bm-input-simple" id="businessName" name="businessName" placeholder="Ex. Maison Louise Coiffure" required="" type="text"/>
+<label class="form-label bm-label" for="{{ registrationForm.establishmentName.vars.id }}">Nom de l’établissement</label>
+{{ form_widget(registrationForm.establishmentName, {attr: {class: 'form-control bm-input-simple', placeholder: 'Ex. Maison Louise Coiffure'}}) }}
+{{ form_errors(registrationForm.establishmentName) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="businessType">Activité principale</label>
-<select class="form-select bm-input-simple" id="businessType" name="businessType" required="">
-<option value="">Sélectionner</option>
-<option>Salon de coiffure</option>
-<option>Barbier</option>
-<option>Institut de beauté</option>
-<option>Onglerie</option>
-<option>Spa &amp; massage</option>
-<option>Maquillage / mariage</option>
-<option>Indépendant beauté</option>
-</select>
+<label class="form-label bm-label" for="{{ registrationForm.firstname.vars.id }}">Prénom</label>
+{{ form_widget(registrationForm.firstname, {attr: {class: 'form-control bm-input-simple', autocomplete: 'given-name', placeholder: 'Votre prénom'}}) }}
+{{ form_errors(registrationForm.firstname) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="city">Ville</label>
-<input class="form-control bm-input-simple" id="city" name="city" placeholder="Ex. Le Havre" required="" type="text"/>
+<label class="form-label bm-label" for="{{ registrationForm.lastname.vars.id }}">Nom</label>
+{{ form_widget(registrationForm.lastname, {attr: {class: 'form-control bm-input-simple', autocomplete: 'family-name', placeholder: 'Votre nom'}}) }}
+{{ form_errors(registrationForm.lastname) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="firstName">Prénom</label>
-<input class="form-control bm-input-simple" id="firstName" name="firstName" placeholder="Votre prénom" required="" type="text"/>
+<label class="form-label bm-label" for="{{ registrationForm.email.vars.id }}">Email professionnel</label>
+{{ form_widget(registrationForm.email, {attr: {class: 'form-control bm-input-simple', autocomplete: 'email', placeholder: 'contact@salon.fr'}}) }}
+{{ form_errors(registrationForm.email) }}
 </div>
 <div class="col-md-6">
-<label class="form-label bm-label" for="lastName">Nom</label>
-<input class="form-control bm-input-simple" id="lastName" name="lastName" placeholder="Votre nom" required="" type="text"/>
-</div>
-<div class="col-md-6">
-<label class="form-label bm-label" for="email">Email professionnel</label>
-<input class="form-control bm-input-simple" id="email" name="email" placeholder="contact@salon.fr" required="" type="email"/>
-</div>
-<div class="col-md-6">
-<label class="form-label bm-label" for="phone">Téléphone</label>
-<input class="form-control bm-input-simple" id="phone" name="phone" placeholder="06 00 00 00 00" required="" type="tel"/>
-</div>
-<div class="col-md-6">
-<label class="form-label bm-label" for="teamSize">Taille de l’équipe</label>
-<select class="form-select bm-input-simple" id="teamSize" name="teamSize">
-<option>Je travaille seul(e)</option>
-<option>2 à 5 collaborateurs</option>
-<option>6 à 10 collaborateurs</option>
-<option>Plus de 10 collaborateurs</option>
-</select>
-</div>
-<div class="col-md-6">
-<label class="form-label bm-label" for="callTime">Meilleur moment pour vous appeler</label>
-<select class="form-select bm-input-simple" id="callTime" name="callTime">
-<option>Matin</option>
-<option>Après-midi</option>
-<option>Fin de journée</option>
-</select>
+<label class="form-label bm-label" for="{{ registrationForm.phone.vars.id }}">Téléphone</label>
+{{ form_widget(registrationForm.phone, {attr: {class: 'form-control bm-input-simple', autocomplete: 'tel', placeholder: '06 00 00 00 00'}}) }}
+{{ form_errors(registrationForm.phone) }}
 </div>
 <div class="col-12">
-<label class="form-label bm-label" for="message">Votre besoin principal</label>
-<textarea class="form-control bm-input-simple" id="message" name="message" placeholder="Ex. Je veux améliorer ma visibilité, réduire les appels, gérer mes réservations en ligne..." rows="4"></textarea>
+<label class="form-label bm-label" for="{{ registrationForm.plainPassword.vars.id }}">Mot de passe</label>
+{{ form_widget(registrationForm.plainPassword, {attr: {class: 'form-control bm-input-simple', autocomplete: 'new-password', placeholder: '8 caractères minimum'}}) }}
+{{ form_errors(registrationForm.plainPassword) }}
 </div>
 <div class="col-12">
 <div class="form-check bm-check">
-<input class="form-check-input" id="consent" required="" type="checkbox" value="1"/>
-<label class="form-check-label" for="consent">
-                        J’accepte d’être recontacté au sujet de ma demande d’inscription professionnelle.
+{{ form_widget(registrationForm.agreeTerms, {attr: {class: 'form-check-input'}}) }}
+<label class="form-check-label" for="{{ registrationForm.agreeTerms.vars.id }}">
+                        J’accepte les conditions d’utilisation et la politique de confidentialité.
                       </label>
 </div>
+{{ form_errors(registrationForm.agreeTerms) }}
 </div>
 <div class="col-12">
-<button class="btn bm-btn bm-btn-primary w-100 bm-btn-register" type="submit">Demander ma démonstration</button>
+<button class="btn bm-btn bm-btn-primary w-100 bm-btn-register" type="submit">Créer mon espace pro</button>
 </div>
 </div>
-</form>
-<p class="bm-form-note">Aucune mise en ligne automatique : votre fiche est préparée avec vous avant publication.</p>
+{{ form_end(registrationForm) }}
+<p class="bm-form-note">Votre compte pro est créé immédiatement, puis votre fiche établissement peut être complétée dans l’onboarding.</p>
 </aside>
 </div>
 </div>
@@ -233,15 +208,15 @@
 <div class="col-md-4">
 <article class="bm-pro-process-card">
 <span>01</span>
-<h3>Demande d’inscription</h3>
-<p>Vous renseignez votre établissement, votre activité et vos coordonnées professionnelles.</p>
+<h3>Création du compte</h3>
+<p>Vous créez votre accès avec votre établissement et vos coordonnées professionnelles.</p>
 </article>
 </div>
 <div class="col-md-4">
 <article class="bm-pro-process-card">
 <span>02</span>
-<h3>Échange personnalisé</h3>
-<p>Nous clarifions vos prestations, vos objectifs, votre organisation et les informations à publier.</p>
+<h3>Onboarding</h3>
+<p>Vous complétez ensuite vos prestations, vos objectifs, votre organisation et les informations à publier.</p>
 </article>
 </div>
 <div class="col-md-4">
@@ -323,15 +298,15 @@
 </div>
 <div class="accordion-item">
 <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#proFaq2" data-bs-toggle="collapse" type="button">La fiche est-elle publiée immédiatement ?</button></h3>
-<div class="accordion-collapse collapse" data-bs-parent="#proFaqAccordion" id="proFaq2"><div class="accordion-body">Non. Cette page est conçue pour recueillir une demande qualifiée. La fiche peut ensuite être préparée, vérifiée et enrichie avant publication.</div></div>
+<div class="accordion-collapse collapse" data-bs-parent="#proFaqAccordion" id="proFaq2"><div class="accordion-body">Non. Votre compte pro est créé, puis la fiche peut être complétée et enrichie avant publication.</div></div>
 </div>
 <div class="accordion-item">
 <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#proFaq3" data-bs-toggle="collapse" type="button">Quelles informations faut-il préparer ?</button></h3>
 <div class="accordion-collapse collapse" data-bs-parent="#proFaqAccordion" id="proFaq3"><div class="accordion-body">Préparez le nom de votre établissement, vos prestations, vos prix, vos horaires, quelques photos et vos coordonnées professionnelles.</div></div>
 </div>
 <div class="accordion-item">
-<h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#proFaq4" data-bs-toggle="collapse" type="button">Puis-je adapter cette page à Symfony plus tard ?</button></h3>
-<div class="accordion-collapse collapse" data-bs-parent="#proFaqAccordion" id="proFaq4"><div class="accordion-body">Oui. La structure HTML est découpée en sections propres et le SCSS est organisé pour être transformé en composants Twig.</div></div>
+<h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#proFaq4" data-bs-toggle="collapse" type="button">Puis-je compléter mon établissement plus tard ?</button></h3>
+<div class="accordion-collapse collapse" data-bs-parent="#proFaqAccordion" id="proFaq4"><div class="accordion-body">Oui. Le compte crée d’abord votre accès professionnel, puis l’onboarding permet de compléter la fiche établissement.</div></div>
 </div>
 </div>
 </div>
@@ -343,8 +318,8 @@
 <div class="bm-pro-final-panel">
 <p class="bm-eyebrow bm-eyebrow-light">Dernière étape</p>
 <h2>Prêt à présenter votre établissement avec une image plus premium ?</h2>
-<p>Commencez par une demande simple. La page pourra ensuite être connectée à Symfony, à une entité professionnelle et à un workflow de validation.</p>
-<a class="btn bm-btn bm-btn-light" href="#pro-registration-form">Remplir le formulaire</a>
+<p>Commencez par créer votre compte professionnel. Vous pourrez ensuite compléter votre fiche et votre onboarding.</p>
+<a class="btn bm-btn bm-btn-light" href="#pro-registration-form">Créer mon espace pro</a>
 </div>
 </div>
 </section>

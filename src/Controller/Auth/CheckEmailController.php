@@ -2,47 +2,52 @@
 
 namespace App\Controller\Auth;
 
-use App\Entity\Auth\User;
-use App\Form\ChangePasswordFormType;
-use App\Form\ResetPasswordRequestFormType;
-use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Mime\Address;
-use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Attribute\Route;
-use Symfony\Contracts\Translation\TranslatorInterface;
 use SymfonyCasts\Bundle\ResetPassword\Controller\ResetPasswordControllerTrait;
-use SymfonyCasts\Bundle\ResetPassword\Exception\ResetPasswordExceptionInterface;
-use SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface;#[Route('/reset-password')]
+use SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface;
+
 final class CheckEmailController extends AbstractController
 {
     use ResetPasswordControllerTrait;
 
-        public function __construct(
-            private ResetPasswordHelperInterface $resetPasswordHelper,
-            private EntityManagerInterface $entityManager,
-        ) {
-        }
+    public function __construct(
+        private readonly ResetPasswordHelperInterface $resetPasswordHelper,
+    ) {
+    }
 
-    /**
-         * Confirmation page after a user has requested a password reset.
-         */
-        #[Route('/check-email', name: 'app_check_email')]
-        public function checkEmail(): Response
-        {
-            // Generate a fake token if the user does not exist or someone hit this page directly.
-            // This prevents exposing whether or not a user was found with the given email address or not
-            if (null === ($resetToken = $this->getTokenObjectFromSession())) {
-                $resetToken = $this->resetPasswordHelper->generateFakeResetToken();
-            }
+    #[Route('/reset-password/check-email', name: 'app_check_email', methods: ['GET'])]
+    public function checkEmailFallback(Request $request): Response
+    {
+        return $this->redirectToRoute('app_check_email_user', [
+            '_locale' => $request->getLocale(),
+        ]);
+    }
 
-            return $this->render('reset_password/check_email.html.twig', [
-                'resetToken' => $resetToken,
-            ]);
-        }
+    #[Route('/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/password/check-email', name: 'app_check_email_user', methods: ['GET'])]
+    public function checkEmailUser(): Response
+    {
+        return $this->renderCheckEmail(false);
+    }
+
+    #[Route('/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/professionals/password/check-email', name: 'app_check_email_pro', methods: ['GET'])]
+    public function checkEmailPro(): Response
+    {
+        return $this->renderCheckEmail(true);
+    }
+
+    private function renderCheckEmail(bool $isPro): Response
+    {
+        $resetToken = $this->getTokenObjectFromSession() ?? $this->resetPasswordHelper->generateFakeResetToken();
+
+        return $this->render('reset_password/check_email.html.twig', [
+            'page_title' => $isPro ? 'Email envoyé — Belle Maison Pro' : 'Email envoyé — Belle Maison',
+            'is_pro' => $isPro,
+            'resetToken' => $resetToken,
+            'login_route' => $isPro ? 'app_login_pro' : 'app_login_user',
+            'forgot_route' => $isPro ? 'app_forgot_password' : 'app_forgot_password_user',
+        ]);
+    }
 }
