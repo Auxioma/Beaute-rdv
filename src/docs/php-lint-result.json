@@ -1,0 +1,1628 @@
+[
+  {
+    "file": "DataFixtures/AppFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/AppFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/BillingDemoFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/BillingDemoFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/BookingDemoFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/BookingDemoFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/BookingExtendedFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/BookingExtendedFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/CategoryFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/CategoryFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/ClientCrmMarketingFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/ClientCrmMarketingFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/CountryCurrencyFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/CountryCurrencyFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/EstablishmentExtraFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/EstablishmentExtraFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/IntegrationWidgetAuditFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/IntegrationWidgetAuditFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/LocaleFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/LocaleFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/NotificationTemplateFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/NotificationTemplateFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/PermissionFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/PermissionFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/ProfessionalDemoFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/ProfessionalDemoFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/SecurityFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/SecurityFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/SeoFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/SeoFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/SubscriptionPlanFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/SubscriptionPlanFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "DataFixtures/UserFixtures.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/DataFixtures/UserFixtures.php",
+    "stderr": ""
+  },
+  {
+    "file": "Form/ChangePasswordFormType.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Form/ChangePasswordFormType.php",
+    "stderr": ""
+  },
+  {
+    "file": "Form/RegistrationFormType.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Form/RegistrationFormType.php",
+    "stderr": ""
+  },
+  {
+    "file": "Form/ResetPasswordRequestFormType.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Form/ResetPasswordRequestFormType.php",
+    "stderr": ""
+  },
+  {
+    "file": "Security/EmailVerifier.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Security/EmailVerifier.php",
+    "stderr": ""
+  },
+  {
+    "file": "Security/UserAuthenticator.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Security/UserAuthenticator.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/AccountUserController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/AccountUserController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserAppointmentDetailController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserAppointmentDetailController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserAppointmentsController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserAppointmentsController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserCancelAppointmentController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserCancelAppointmentController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserDeleteAccountController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserDeleteAccountController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserFavoritesController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserFavoritesController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserHistoryController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserHistoryController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserLoyaltyController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserLoyaltyController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserNotificationPreferencesController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserNotificationPreferencesController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserNotificationsController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserNotificationsController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserProfileController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserProfileController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserRescheduleAppointmentController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserRescheduleAppointmentController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserReviewFormController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserReviewFormController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserReviewsController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserReviewsController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserSecurityController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserSecurityController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserSupportController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserSupportController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Account/UserSupportDetailController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Account/UserSupportDetailController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/ForgotPasswordController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/ForgotPasswordController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/ForgotPasswordUserController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/ForgotPasswordUserController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/LoginUserController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/LoginUserController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/RegisterUserController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/RegisterUserController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/RegisterController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/RegisterController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/VerifyEmailController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/VerifyEmailController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/ForgotPasswordRequestController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/ForgotPasswordRequestController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/CheckEmailController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/CheckEmailController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/ResetPasswordController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/ResetPasswordController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/LoginController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/LoginController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Auth/LogoutController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Auth/LogoutController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingAuthController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingAuthController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingCancelController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingCancelController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingCancelledBySalonController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingCancelledBySalonController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingConfirmationController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingConfirmationController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingEmailVerificationController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingEmailVerificationController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingNoSlotsController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingNoSlotsController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingPendingController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingPendingController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingPhoneVerificationController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingPhoneVerificationController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingPresenceConfirmationController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingPresenceConfirmationController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingRescheduleController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingRescheduleController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingServiceController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingServiceController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingSlotController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingSlotController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingSlotExpiredController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingSlotExpiredController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingStaffController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingStaffController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingSummaryController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingSummaryController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Booking/BookingWaitlistController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Booking/BookingWaitlistController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailBookingCancelledController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailBookingCancelledController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailBookingCancelledProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailBookingCancelledProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailBookingConfirmationController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailBookingConfirmationController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailBookingPendingController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailBookingPendingController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailBookingReminderController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailBookingReminderController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailNewBookingProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailNewBookingProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailPresenceConfirmationController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailPresenceConfirmationController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailResetPasswordProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailResetPasswordProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailResetPasswordUserController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailResetPasswordUserController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailReviewRequestController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailReviewRequestController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Email/EmailSubscriptionInvoiceProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Email/EmailSubscriptionInvoiceProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/AgendaProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/AgendaProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/AppointmentCancelProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/AppointmentCancelProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/AppointmentCreateProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/AppointmentCreateProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/AppointmentDetailProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/AppointmentDetailProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/AppointmentEditProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/AppointmentEditProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/AppointmentNoShowProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/AppointmentNoShowProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/AppointmentRescheduleProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/AppointmentRescheduleProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/AvailabilityProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/AvailabilityProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/BillingInvoicesProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/BillingInvoicesProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/BillingPaymentMethodProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/BillingPaymentMethodProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/BillingProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/BillingProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ClientCreateProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ClientCreateProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ClientDetailProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ClientDetailProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ClientEditProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ClientEditProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ClientExportProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ClientExportProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ClientImportProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ClientImportProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ClientMergeProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ClientMergeProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ClientsProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ClientsProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/DashboardProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/DashboardProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/LoginProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/LoginProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/MarketingProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/MarketingProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/MultiEstablishmentProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/MultiEstablishmentProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/NotificationsProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/NotificationsProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/OnboardingProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/OnboardingProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/PaymentsProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/PaymentsProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/PricingProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/PricingProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/RegisterProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/RegisterProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ReportsProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ReportsProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ResourceCreateProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ResourceCreateProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ResourceEditProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ResourceEditProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ResourcesProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ResourcesProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ReviewsProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ReviewsProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/RolesProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/RolesProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ServiceCategoryProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ServiceCategoryProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ServiceCreateProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ServiceCreateProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ServiceDetailProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ServiceDetailProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ServiceEditProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ServiceEditProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ServicePackageCreateProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ServicePackageCreateProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/ServicesProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/ServicesProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsBookingRulesProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsBookingRulesProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsCancellationPolicyProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsCancellationPolicyProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsEstablishmentProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsEstablishmentProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsIntegrationsProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsIntegrationsProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsLanguagesProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsLanguagesProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsLegalProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsLegalProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsNotificationsProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsNotificationsProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SettingsWidgetProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SettingsWidgetProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SubscriptionCheckoutProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SubscriptionCheckoutProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SubscriptionProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SubscriptionProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/SubscriptionSuccessProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/SubscriptionSuccessProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/TeamAbsenceProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/TeamAbsenceProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/TeamHolidaysProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/TeamHolidaysProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/TeamMemberCreateProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/TeamMemberCreateProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/TeamMemberEditProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/TeamMemberEditProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/TeamMemberProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/TeamMemberProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/TeamProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/TeamProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/VerificationProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/VerificationProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Pro/WaitlistProController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Pro/WaitlistProController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/AboutController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/AboutController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/AccessibilityController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/AccessibilityController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/BlogController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/BlogController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/BlogCategoryController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/BlogCategoryController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/BlogDetailController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/BlogDetailController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/CategoryCityPageController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/CategoryCityPageController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/CategoryPageController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/CategoryPageController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/CityPageController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/CityPageController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/ContactController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/ContactController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/CookiesController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/CookiesController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/DataProtectionController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/DataProtectionController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/FaqPublicController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/FaqPublicController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/GuideCityController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/GuideCityController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/HelpCenterController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/HelpCenterController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/HelpDetailController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/HelpDetailController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/HomeController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/HomeController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/LegalNoticeController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/LegalNoticeController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/PrivacyPolicyController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/PrivacyPolicyController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/SalonDetailController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/SalonDetailController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/SearchResultsController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/SearchResultsController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/ServiceCityPageController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/ServiceCityPageController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/StaffDetailController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/StaffDetailController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Public/TermsController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Public/TermsController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/System/EmptyStateController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/System/EmptyStateController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/System/Error403Controller.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/System/Error403Controller.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/System/Error404Controller.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/System/Error404Controller.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/System/Error500Controller.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/System/Error500Controller.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/System/LoadingStateController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/System/LoadingStateController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/System/MaintenanceController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/System/MaintenanceController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/System/OfflineController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/System/OfflineController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Controller/Api/NavBarController.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Controller/Api/NavBarController.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Booking/AppointmentItemRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Booking/AppointmentItemRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Booking/AppointmentRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Booking/AppointmentRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Booking/AppointmentStatusHistoryRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Booking/AppointmentStatusHistoryRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Booking/BookingRuleRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Booking/BookingRuleRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Booking/WaitlistRequestRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Booking/WaitlistRequestRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Audit/AuditLogRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Audit/AuditLogRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Content/BlogPostRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Content/BlogPostRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Content/SeoPageRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Content/SeoPageRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Setting/BookingWidgetRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Setting/BookingWidgetRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Setting/IntegrationConnectionRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Setting/IntegrationConnectionRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Catalog/CategoryRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Catalog/CategoryRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Catalog/ServiceCategoryRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Catalog/ServiceCategoryRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Catalog/ServicePackageRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Catalog/ServicePackageRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Catalog/ServiceRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Catalog/ServiceRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Catalog/ServiceTranslationRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Catalog/ServiceTranslationRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Catalog/ServiceVariantRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Catalog/ServiceVariantRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Client/ClientProfileRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Client/ClientProfileRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Client/EstablishmentClientRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Client/EstablishmentClientRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Client/FavoriteEstablishmentRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Client/FavoriteEstablishmentRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/International/CountryRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/International/CountryRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/International/CurrencyRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/International/CurrencyRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/International/LocaleRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/International/LocaleRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/EstablishmentMediaRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/EstablishmentMediaRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/EstablishmentMemberRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/EstablishmentMemberRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/EstablishmentOpeningHourRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/EstablishmentOpeningHourRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/EstablishmentRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/EstablishmentRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/EstablishmentRoleRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/EstablishmentRoleRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/EstablishmentSocialLinkRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/EstablishmentSocialLinkRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/EstablishmentTranslationRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/EstablishmentTranslationRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/PermissionRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/PermissionRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Establishment/PhysicalResourceRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Establishment/PhysicalResourceRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Marketing/LoyaltyAccountRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Marketing/LoyaltyAccountRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Marketing/LoyaltyProgramRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Marketing/LoyaltyProgramRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Marketing/MarketingCampaignRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Marketing/MarketingCampaignRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Marketing/PromoCodeRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Marketing/PromoCodeRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Notification/NotificationLogRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Notification/NotificationLogRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Notification/NotificationPreferenceRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Notification/NotificationPreferenceRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Notification/NotificationTemplateRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Notification/NotificationTemplateRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Professional/PlanPriceRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Professional/PlanPriceRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Professional/ProfessionalAccountRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Professional/ProfessionalAccountRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Professional/SubscriptionInvoiceRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Professional/SubscriptionInvoiceRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Professional/SubscriptionPaymentRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Professional/SubscriptionPaymentRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Professional/SubscriptionPlanPriceRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Professional/SubscriptionPlanPriceRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Professional/SubscriptionPlanRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Professional/SubscriptionPlanRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Professional/SubscriptionRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Professional/SubscriptionRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Professional/WebhookEventRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Professional/WebhookEventRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Auth/ResetPasswordRequestRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Auth/ResetPasswordRequestRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Auth/UserRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Auth/UserRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Auth/UserSecurityTokenRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Auth/UserSecurityTokenRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Repository/Review/ReviewRepository.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Repository/Review/ReviewRepository.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Traits/CreatedAtTraits.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Traits/CreatedAtTraits.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Traits/DeletedAtTraits.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Traits/DeletedAtTraits.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Traits/LastLoginAtTraits.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Traits/LastLoginAtTraits.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Traits/UpdatedAtTraits.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Traits/UpdatedAtTraits.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Booking/Appointment.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Booking/Appointment.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Booking/AppointmentItem.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Booking/AppointmentItem.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Booking/AppointmentStatusHistory.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Booking/AppointmentStatusHistory.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Booking/BookingRule.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Booking/BookingRule.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Booking/WaitlistRequest.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Booking/WaitlistRequest.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Audit/AuditLog.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Audit/AuditLog.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Content/BlogPost.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Content/BlogPost.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Content/SeoPage.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Content/SeoPage.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Setting/BookingWidget.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Setting/BookingWidget.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Setting/IntegrationConnection.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Setting/IntegrationConnection.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Catalog/Category.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Catalog/Category.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Catalog/Service.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Catalog/Service.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Catalog/ServiceCategory.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Catalog/ServiceCategory.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Catalog/ServicePackage.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Catalog/ServicePackage.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Catalog/ServiceTranslation.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Catalog/ServiceTranslation.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Catalog/ServiceVariant.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Catalog/ServiceVariant.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Client/ClientProfile.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Client/ClientProfile.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Client/EstablishmentClient.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Client/EstablishmentClient.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Client/FavoriteEstablishment.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Client/FavoriteEstablishment.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/International/Country.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/International/Country.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/International/Currency.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/International/Currency.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/International/Locale.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/International/Locale.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/Establishment.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/Establishment.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/EstablishmentMedia.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/EstablishmentMedia.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/EstablishmentMember.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/EstablishmentMember.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/EstablishmentOpeningHour.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/EstablishmentOpeningHour.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/EstablishmentRole.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/EstablishmentRole.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/EstablishmentSocialLink.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/EstablishmentSocialLink.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/EstablishmentTranslation.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/EstablishmentTranslation.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/Permission.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/Permission.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Establishment/PhysicalResource.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Establishment/PhysicalResource.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Marketing/LoyaltyAccount.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Marketing/LoyaltyAccount.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Marketing/LoyaltyProgram.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Marketing/LoyaltyProgram.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Marketing/MarketingCampaign.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Marketing/MarketingCampaign.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Marketing/PromoCode.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Marketing/PromoCode.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Notification/NotificationLog.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Notification/NotificationLog.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Notification/NotificationPreference.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Notification/NotificationPreference.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Notification/NotificationTemplate.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Notification/NotificationTemplate.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Professional/PlanPrice.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Professional/PlanPrice.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Professional/ProfessionalAccount.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Professional/ProfessionalAccount.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Professional/Subscription.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Professional/Subscription.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Professional/SubscriptionInvoice.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Professional/SubscriptionInvoice.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Professional/SubscriptionPayment.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Professional/SubscriptionPayment.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Professional/SubscriptionPlan.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Professional/SubscriptionPlan.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Professional/SubscriptionPlanPrice.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Professional/SubscriptionPlanPrice.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Professional/WebhookEvent.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Professional/WebhookEvent.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Auth/ResetPasswordRequest.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Auth/ResetPasswordRequest.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Auth/User.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Auth/User.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Auth/UserSecurityToken.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Auth/UserSecurityToken.php",
+    "stderr": ""
+  },
+  {
+    "file": "Entity/Review/Review.php",
+    "ok": true,
+    "stdout": "No syntax errors detected in /mnt/data/src-organized-symfony8-v1/Entity/Review/Review.php",
+    "stderr": ""
+  }
+]

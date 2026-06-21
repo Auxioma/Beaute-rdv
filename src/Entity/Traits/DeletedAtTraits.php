@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Entity\Traits;
+
+use Doctrine\ORM\Mapping as ORM;trait DeletedAtTraits
+{
+    #[ORM\Column(nullable: true)]
+    private ?\DateTimeImmutable $deletedAt = null;
+
+    public function getDeletedAt(): ?\DateTimeImmutable
+    {
+        return $this->deletedAt;
+    }
+
+    public function setDeletedAt(?\DateTimeImmutable $deletedAt): static
+    {
+        $this->deletedAt = $deletedAt;
+
+        return $this;
+    }
+
+    public function softDelete(): static
+    {
+        $this->deletedAt = new \DateTimeImmutable();
+
+        return $this;
+    }
+
+    public function isDeleted(): bool
+    {
+        return $this->deletedAt !== null;
+    }
+}

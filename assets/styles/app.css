@@ -1,3 +1,22 @@
-body {
-    background-color: skyblue;
-}
+@import './fragments/00-variables.css';
+@import './fragments/01-helpers.css';
+@import './fragments/02-base.css';
+
+@import './fragments/10-buttons.css';
+@import './fragments/11-forms.css';
+@import './fragments/12-cards.css';
+@import './fragments/13-faq.css';
+
+@import './fragments/20-header.css';
+@import './fragments/21-footer.css';
+
+@import './fragments/30-home.css';
+@import './fragments/31-register-pro.css';
+@import './fragments/32-auth-pro.css';
+@import './fragments/33-auth-user.css';
+
+@import './fragments/40-admin-pro.css';
+
+@import './fragments/50-client-booking.css';
+
+@import './fragments/99-responsive.css';

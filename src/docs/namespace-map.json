@@ -1,0 +1,406 @@
+{
+  "entities": {
+    "Appointment": {
+      "old": "App\\Entity\\Appointment",
+      "new": "App\\Entity\\Booking\\Appointment",
+      "domain": "Booking"
+    },
+    "AppointmentItem": {
+      "old": "App\\Entity\\AppointmentItem",
+      "new": "App\\Entity\\Booking\\AppointmentItem",
+      "domain": "Booking"
+    },
+    "AppointmentStatusHistory": {
+      "old": "App\\Entity\\AppointmentStatusHistory",
+      "new": "App\\Entity\\Booking\\AppointmentStatusHistory",
+      "domain": "Booking"
+    },
+    "AuditLog": {
+      "old": "App\\Entity\\AuditLog",
+      "new": "App\\Entity\\Audit\\AuditLog",
+      "domain": "Audit"
+    },
+    "BlogPost": {
+      "old": "App\\Entity\\BlogPost",
+      "new": "App\\Entity\\Content\\BlogPost",
+      "domain": "Content"
+    },
+    "BookingRule": {
+      "old": "App\\Entity\\BookingRule",
+      "new": "App\\Entity\\Booking\\BookingRule",
+      "domain": "Booking"
+    },
+    "BookingWidget": {
+      "old": "App\\Entity\\BookingWidget",
+      "new": "App\\Entity\\Setting\\BookingWidget",
+      "domain": "Setting"
+    },
+    "Category": {
+      "old": "App\\Entity\\Category",
+      "new": "App\\Entity\\Catalog\\Category",
+      "domain": "Catalog"
+    },
+    "ClientProfile": {
+      "old": "App\\Entity\\ClientProfile",
+      "new": "App\\Entity\\Client\\ClientProfile",
+      "domain": "Client"
+    },
+    "Country": {
+      "old": "App\\Entity\\Country",
+      "new": "App\\Entity\\International\\Country",
+      "domain": "International"
+    },
+    "Currency": {
+      "old": "App\\Entity\\Currency",
+      "new": "App\\Entity\\International\\Currency",
+      "domain": "International"
+    },
+    "Establishment": {
+      "old": "App\\Entity\\Establishment",
+      "new": "App\\Entity\\Establishment\\Establishment",
+      "domain": "Establishment"
+    },
+    "EstablishmentClient": {
+      "old": "App\\Entity\\EstablishmentClient",
+      "new": "App\\Entity\\Client\\EstablishmentClient",
+      "domain": "Client"
+    },
+    "EstablishmentMedia": {
+      "old": "App\\Entity\\EstablishmentMedia",
+      "new": "App\\Entity\\Establishment\\EstablishmentMedia",
+      "domain": "Establishment"
+    },
+    "EstablishmentMember": {
+      "old": "App\\Entity\\EstablishmentMember",
+      "new": "App\\Entity\\Establishment\\EstablishmentMember",
+      "domain": "Establishment"
+    },
+    "EstablishmentOpeningHour": {
+      "old": "App\\Entity\\EstablishmentOpeningHour",
+      "new": "App\\Entity\\Establishment\\EstablishmentOpeningHour",
+      "domain": "Establishment"
+    },
+    "EstablishmentRole": {
+      "old": "App\\Entity\\EstablishmentRole",
+      "new": "App\\Entity\\Establishment\\EstablishmentRole",
+      "domain": "Establishment"
+    },
+    "EstablishmentSocialLink": {
+      "old": "App\\Entity\\EstablishmentSocialLink",
+      "new": "App\\Entity\\Establishment\\EstablishmentSocialLink",
+      "domain": "Establishment"
+    },
+    "EstablishmentTranslation": {
+      "old": "App\\Entity\\EstablishmentTranslation",
+      "new": "App\\Entity\\Establishment\\EstablishmentTranslation",
+      "domain": "Establishment"
+    },
+    "FavoriteEstablishment": {
+      "old": "App\\Entity\\FavoriteEstablishment",
+      "new": "App\\Entity\\Client\\FavoriteEstablishment",
+      "domain": "Client"
+    },
+    "IntegrationConnection": {
+      "old": "App\\Entity\\IntegrationConnection",
+      "new": "App\\Entity\\Setting\\IntegrationConnection",
+      "domain": "Setting"
+    },
+    "Locale": {
+      "old": "App\\Entity\\Locale",
+      "new": "App\\Entity\\International\\Locale",
+      "domain": "International"
+    },
+    "LoyaltyAccount": {
+      "old": "App\\Entity\\LoyaltyAccount",
+      "new": "App\\Entity\\Marketing\\LoyaltyAccount",
+      "domain": "Marketing"
+    },
+    "LoyaltyProgram": {
+      "old": "App\\Entity\\LoyaltyProgram",
+      "new": "App\\Entity\\Marketing\\LoyaltyProgram",
+      "domain": "Marketing"
+    },
+    "MarketingCampaign": {
+      "old": "App\\Entity\\MarketingCampaign",
+      "new": "App\\Entity\\Marketing\\MarketingCampaign",
+      "domain": "Marketing"
+    },
+    "NotificationLog": {
+      "old": "App\\Entity\\NotificationLog",
+      "new": "App\\Entity\\Notification\\NotificationLog",
+      "domain": "Notification"
+    },
+    "NotificationPreference": {
+      "old": "App\\Entity\\NotificationPreference",
+      "new": "App\\Entity\\Notification\\NotificationPreference",
+      "domain": "Notification"
+    },
+    "NotificationTemplate": {
+      "old": "App\\Entity\\NotificationTemplate",
+      "new": "App\\Entity\\Notification\\NotificationTemplate",
+      "domain": "Notification"
+    },
+    "Permission": {
+      "old": "App\\Entity\\Permission",
+      "new": "App\\Entity\\Establishment\\Permission",
+      "domain": "Establishment"
+    },
+    "PhysicalResource": {
+      "old": "App\\Entity\\PhysicalResource",
+      "new": "App\\Entity\\Establishment\\PhysicalResource",
+      "domain": "Establishment"
+    },
+    "PlanPrice": {
+      "old": "App\\Entity\\PlanPrice",
+      "new": "App\\Entity\\Professional\\PlanPrice",
+      "domain": "Professional"
+    },
+    "ProfessionalAccount": {
+      "old": "App\\Entity\\ProfessionalAccount",
+      "new": "App\\Entity\\Professional\\ProfessionalAccount",
+      "domain": "Professional"
+    },
+    "PromoCode": {
+      "old": "App\\Entity\\PromoCode",
+      "new": "App\\Entity\\Marketing\\PromoCode",
+      "domain": "Marketing"
+    },
+    "ResetPasswordRequest": {
+      "old": "App\\Entity\\ResetPasswordRequest",
+      "new": "App\\Entity\\Auth\\ResetPasswordRequest",
+      "domain": "Auth"
+    },
+    "Review": {
+      "old": "App\\Entity\\Review",
+      "new": "App\\Entity\\Review\\Review",
+      "domain": "Review"
+    },
+    "SeoPage": {
+      "old": "App\\Entity\\SeoPage",
+      "new": "App\\Entity\\Content\\SeoPage",
+      "domain": "Content"
+    },
+    "Service": {
+      "old": "App\\Entity\\Service",
+      "new": "App\\Entity\\Catalog\\Service",
+      "domain": "Catalog"
+    },
+    "ServiceCategory": {
+      "old": "App\\Entity\\ServiceCategory",
+      "new": "App\\Entity\\Catalog\\ServiceCategory",
+      "domain": "Catalog"
+    },
+    "ServicePackage": {
+      "old": "App\\Entity\\ServicePackage",
+      "new": "App\\Entity\\Catalog\\ServicePackage",
+      "domain": "Catalog"
+    },
+    "ServiceTranslation": {
+      "old": "App\\Entity\\ServiceTranslation",
+      "new": "App\\Entity\\Catalog\\ServiceTranslation",
+      "domain": "Catalog"
+    },
+    "ServiceVariant": {
+      "old": "App\\Entity\\ServiceVariant",
+      "new": "App\\Entity\\Catalog\\ServiceVariant",
+      "domain": "Catalog"
+    },
+    "Subscription": {
+      "old": "App\\Entity\\Subscription",
+      "new": "App\\Entity\\Professional\\Subscription",
+      "domain": "Professional"
+    },
+    "SubscriptionInvoice": {
+      "old": "App\\Entity\\SubscriptionInvoice",
+      "new": "App\\Entity\\Professional\\SubscriptionInvoice",
+      "domain": "Professional"
+    },
+    "SubscriptionPayment": {
+      "old": "App\\Entity\\SubscriptionPayment",
+      "new": "App\\Entity\\Professional\\SubscriptionPayment",
+      "domain": "Professional"
+    },
+    "SubscriptionPlan": {
+      "old": "App\\Entity\\SubscriptionPlan",
+      "new": "App\\Entity\\Professional\\SubscriptionPlan",
+      "domain": "Professional"
+    },
+    "SubscriptionPlanPrice": {
+      "old": "App\\Entity\\SubscriptionPlanPrice",
+      "new": "App\\Entity\\Professional\\SubscriptionPlanPrice",
+      "domain": "Professional"
+    },
+    "User": {
+      "old": "App\\Entity\\User",
+      "new": "App\\Entity\\Auth\\User",
+      "domain": "Auth"
+    },
+    "UserSecurityToken": {
+      "old": "App\\Entity\\UserSecurityToken",
+      "new": "App\\Entity\\Auth\\UserSecurityToken",
+      "domain": "Auth"
+    },
+    "WaitlistRequest": {
+      "old": "App\\Entity\\WaitlistRequest",
+      "new": "App\\Entity\\Booking\\WaitlistRequest",
+      "domain": "Booking"
+    },
+    "WebhookEvent": {
+      "old": "App\\Entity\\WebhookEvent",
+      "new": "App\\Entity\\Professional\\WebhookEvent",
+      "domain": "Professional"
+    }
+  },
+  "repositories": {
+    "AppointmentItemRepository": {
+      "new": "App\\Repository\\Booking\\AppointmentItemRepository"
+    },
+    "AppointmentRepository": {
+      "new": "App\\Repository\\Booking\\AppointmentRepository"
+    },
+    "AppointmentStatusHistoryRepository": {
+      "new": "App\\Repository\\Booking\\AppointmentStatusHistoryRepository"
+    },
+    "AuditLogRepository": {
+      "new": "App\\Repository\\Audit\\AuditLogRepository"
+    },
+    "BlogPostRepository": {
+      "new": "App\\Repository\\Content\\BlogPostRepository"
+    },
+    "BookingRuleRepository": {
+      "new": "App\\Repository\\Booking\\BookingRuleRepository"
+    },
+    "BookingWidgetRepository": {
+      "new": "App\\Repository\\Setting\\BookingWidgetRepository"
+    },
+    "CategoryRepository": {
+      "new": "App\\Repository\\Catalog\\CategoryRepository"
+    },
+    "ClientProfileRepository": {
+      "new": "App\\Repository\\Client\\ClientProfileRepository"
+    },
+    "CountryRepository": {
+      "new": "App\\Repository\\International\\CountryRepository"
+    },
+    "CurrencyRepository": {
+      "new": "App\\Repository\\International\\CurrencyRepository"
+    },
+    "EstablishmentClientRepository": {
+      "new": "App\\Repository\\Client\\EstablishmentClientRepository"
+    },
+    "EstablishmentMediaRepository": {
+      "new": "App\\Repository\\Establishment\\EstablishmentMediaRepository"
+    },
+    "EstablishmentMemberRepository": {
+      "new": "App\\Repository\\Establishment\\EstablishmentMemberRepository"
+    },
+    "EstablishmentOpeningHourRepository": {
+      "new": "App\\Repository\\Establishment\\EstablishmentOpeningHourRepository"
+    },
+    "EstablishmentRepository": {
+      "new": "App\\Repository\\Establishment\\EstablishmentRepository"
+    },
+    "EstablishmentRoleRepository": {
+      "new": "App\\Repository\\Establishment\\EstablishmentRoleRepository"
+    },
+    "EstablishmentSocialLinkRepository": {
+      "new": "App\\Repository\\Establishment\\EstablishmentSocialLinkRepository"
+    },
+    "EstablishmentTranslationRepository": {
+      "new": "App\\Repository\\Establishment\\EstablishmentTranslationRepository"
+    },
+    "FavoriteEstablishmentRepository": {
+      "new": "App\\Repository\\Client\\FavoriteEstablishmentRepository"
+    },
+    "IntegrationConnectionRepository": {
+      "new": "App\\Repository\\Setting\\IntegrationConnectionRepository"
+    },
+    "LocaleRepository": {
+      "new": "App\\Repository\\International\\LocaleRepository"
+    },
+    "LoyaltyAccountRepository": {
+      "new": "App\\Repository\\Marketing\\LoyaltyAccountRepository"
+    },
+    "LoyaltyProgramRepository": {
+      "new": "App\\Repository\\Marketing\\LoyaltyProgramRepository"
+    },
+    "MarketingCampaignRepository": {
+      "new": "App\\Repository\\Marketing\\MarketingCampaignRepository"
+    },
+    "NotificationLogRepository": {
+      "new": "App\\Repository\\Notification\\NotificationLogRepository"
+    },
+    "NotificationPreferenceRepository": {
+      "new": "App\\Repository\\Notification\\NotificationPreferenceRepository"
+    },
+    "NotificationTemplateRepository": {
+      "new": "App\\Repository\\Notification\\NotificationTemplateRepository"
+    },
+    "PermissionRepository": {
+      "new": "App\\Repository\\Establishment\\PermissionRepository"
+    },
+    "PhysicalResourceRepository": {
+      "new": "App\\Repository\\Establishment\\PhysicalResourceRepository"
+    },
+    "PlanPriceRepository": {
+      "new": "App\\Repository\\Professional\\PlanPriceRepository"
+    },
+    "ProfessionalAccountRepository": {
+      "new": "App\\Repository\\Professional\\ProfessionalAccountRepository"
+    },
+    "PromoCodeRepository": {
+      "new": "App\\Repository\\Marketing\\PromoCodeRepository"
+    },
+    "ResetPasswordRequestRepository": {
+      "new": "App\\Repository\\Auth\\ResetPasswordRequestRepository"
+    },
+    "ReviewRepository": {
+      "new": "App\\Repository\\Review\\ReviewRepository"
+    },
+    "SeoPageRepository": {
+      "new": "App\\Repository\\Content\\SeoPageRepository"
+    },
+    "ServiceCategoryRepository": {
+      "new": "App\\Repository\\Catalog\\ServiceCategoryRepository"
+    },
+    "ServicePackageRepository": {
+      "new": "App\\Repository\\Catalog\\ServicePackageRepository"
+    },
+    "ServiceRepository": {
+      "new": "App\\Repository\\Catalog\\ServiceRepository"
+    },
+    "ServiceTranslationRepository": {
+      "new": "App\\Repository\\Catalog\\ServiceTranslationRepository"
+    },
+    "ServiceVariantRepository": {
+      "new": "App\\Repository\\Catalog\\ServiceVariantRepository"
+    },
+    "SubscriptionInvoiceRepository": {
+      "new": "App\\Repository\\Professional\\SubscriptionInvoiceRepository"
+    },
+    "SubscriptionPaymentRepository": {
+      "new": "App\\Repository\\Professional\\SubscriptionPaymentRepository"
+    },
+    "SubscriptionPlanPriceRepository": {
+      "new": "App\\Repository\\Professional\\SubscriptionPlanPriceRepository"
+    },
+    "SubscriptionPlanRepository": {
+      "new": "App\\Repository\\Professional\\SubscriptionPlanRepository"
+    },
+    "SubscriptionRepository": {
+      "new": "App\\Repository\\Professional\\SubscriptionRepository"
+    },
+    "UserRepository": {
+      "new": "App\\Repository\\Auth\\UserRepository"
+    },
+    "UserSecurityTokenRepository": {
+      "new": "App\\Repository\\Auth\\UserSecurityTokenRepository"
+    },
+    "WaitlistRequestRepository": {
+      "new": "App\\Repository\\Booking\\WaitlistRequestRepository"
+    },
+    "WebhookEventRepository": {
+      "new": "App\\Repository\\Professional\\WebhookEventRepository"
+    }
+  }
+}

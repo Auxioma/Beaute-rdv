@@ -1,0 +1,1451 @@
+[
+  {
+    "file": "Controller/Account/AccountUserController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_account_user"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account', name: 'app_account_user', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserAppointmentDetailController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_appointment_detail"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/appointments/demo', name: 'app_user_appointment_detail', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserAppointmentsController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_appointments"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/appointments', name: 'app_user_appointments', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserCancelAppointmentController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_cancel_appointment"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/appointments/demo/cancel', name: 'app_user_cancel_appointment', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserDeleteAccountController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_delete_account"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/delete', name: 'app_user_delete_account', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserFavoritesController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_favorites"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/favorites', name: 'app_user_favorites', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserHistoryController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_history"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/history', name: 'app_user_history', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserLoyaltyController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_loyalty"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/loyalty', name: 'app_user_loyalty', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserNotificationPreferencesController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_notification_preferences"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/notification-preferences', name: 'app_user_notification_preferences', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserNotificationsController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_notifications"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/notifications', name: 'app_user_notifications', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserProfileController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_profile"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/profile', name: 'app_user_profile', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserRescheduleAppointmentController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_reschedule_appointment"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/appointments/demo/reschedule', name: 'app_user_reschedule_appointment', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserReviewFormController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_review_form"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/reviews/new', name: 'app_user_review_form', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserReviewsController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_reviews"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/reviews', name: 'app_user_reviews', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserSecurityController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_security"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/security', name: 'app_user_security', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserSupportController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_support"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/support', name: 'app_user_support', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Account/UserSupportDetailController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_user_support_detail"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/account/support/demo', name: 'app_user_support_detail', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Api/NavBarController.php",
+    "route_count": 0,
+    "route_names": [],
+    "route_attributes": []
+  },
+  {
+    "file": "Controller/Auth/CheckEmailController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_check_email"
+    ],
+    "route_attributes": [
+      "'/reset-password'",
+      "'/check-email', name: 'app_check_email'"
+    ]
+  },
+  {
+    "file": "Controller/Auth/ForgotPasswordController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_forgot_password"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/professionals/password/forgot', name: 'app_forgot_password', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Auth/ForgotPasswordRequestController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_forgot_password_request"
+    ],
+    "route_attributes": [
+      "'/reset-password'",
+      "'', name: 'app_forgot_password_request'"
+    ]
+  },
+  {
+    "file": "Controller/Auth/ForgotPasswordUserController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_forgot_password_user"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/password/forgot', name: 'app_forgot_password_user', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Auth/LoginController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_login"
+    ],
+    "route_attributes": [
+      "path: '/login', name: 'app_login'"
+    ]
+  },
+  {
+    "file": "Controller/Auth/LoginUserController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_login_user"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/login', name: 'app_login_user', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Auth/LogoutController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_logout"
+    ],
+    "route_attributes": [
+      "path: '/logout', name: 'app_logout'"
+    ]
+  },
+  {
+    "file": "Controller/Auth/RegisterController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_register"
+    ],
+    "route_attributes": [
+      "'/register', name: 'app_register'"
+    ]
+  },
+  {
+    "file": "Controller/Auth/RegisterUserController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_register_user"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/register', name: 'app_register_user', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Auth/ResetPasswordController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_reset_password"
+    ],
+    "route_attributes": [
+      "'/reset-password'",
+      "'/reset/{token}', name: 'app_reset_password', defaults: ['token' => null]"
+    ]
+  },
+  {
+    "file": "Controller/Auth/VerifyEmailController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_verify_email"
+    ],
+    "route_attributes": [
+      "'/verify/email', name: 'app_verify_email'"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingAuthController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_auth"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/account', name: 'app_booking_auth', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingCancelController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_cancel"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/cancel', name: 'app_booking_cancel', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingCancelledBySalonController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_cancelled_by_salon"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/cancelled-by-salon', name: 'app_booking_cancelled_by_salon', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingConfirmationController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_confirmation"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/confirmation', name: 'app_booking_confirmation', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingEmailVerificationController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_email_verification"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/email-verification', name: 'app_booking_email_verification', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingNoSlotsController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_no_slots"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/no-slots', name: 'app_booking_no_slots', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingPendingController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_pending"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/pending', name: 'app_booking_pending', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingPhoneVerificationController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_phone_verification"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/phone-verification', name: 'app_booking_phone_verification', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingPresenceConfirmationController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_presence_confirmation"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/presence-confirmation', name: 'app_booking_presence_confirmation', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingRescheduleController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_reschedule"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/reschedule', name: 'app_booking_reschedule', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingServiceController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_service"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/services', name: 'app_booking_service', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingSlotController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_slot"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/slots', name: 'app_booking_slot', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingSlotExpiredController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_slot_expired"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/slot-expired', name: 'app_booking_slot_expired', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingStaffController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_staff"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/staff', name: 'app_booking_staff', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingSummaryController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_summary"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/summary', name: 'app_booking_summary', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Booking/BookingWaitlistController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_booking_waitlist"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/booking/waitlist', name: 'app_booking_waitlist', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailBookingCancelledController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_booking_cancelled"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/booking/cancelled', name: 'app_email_booking_cancelled', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailBookingCancelledProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_booking_cancelled_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/booking/cancelled/pro', name: 'app_email_booking_cancelled_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailBookingConfirmationController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_booking_confirmation"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/booking/confirmation', name: 'app_email_booking_confirmation', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailBookingPendingController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_booking_pending"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/booking/pending', name: 'app_email_booking_pending', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailBookingReminderController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_booking_reminder"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/booking/reminder', name: 'app_email_booking_reminder', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailNewBookingProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_new_booking_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/new/booking/pro', name: 'app_email_new_booking_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailPresenceConfirmationController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_presence_confirmation"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/presence/confirmation', name: 'app_email_presence_confirmation', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailResetPasswordProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_reset_password_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/reset/password/pro', name: 'app_email_reset_password_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailResetPasswordUserController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_reset_password_user"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/reset/password/user', name: 'app_email_reset_password_user', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailReviewRequestController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_review_request"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/review/request', name: 'app_email_review_request', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Email/EmailSubscriptionInvoiceProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_email_subscription_invoice_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/dev/emails/subscription/invoice/pro', name: 'app_email_subscription_invoice_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/AgendaProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_agenda_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/agenda', name: 'app_agenda_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/AppointmentCancelProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_appointment_cancel_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/appointments/demo/cancel', name: 'app_appointment_cancel_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/AppointmentCreateProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_appointment_create_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/appointments/create', name: 'app_appointment_create_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/AppointmentDetailProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_appointment_detail_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/appointments/demo', name: 'app_appointment_detail_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/AppointmentEditProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_appointment_edit_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/appointments/demo/edit', name: 'app_appointment_edit_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/AppointmentNoShowProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_appointment_no_show_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/appointments/demo/no-show', name: 'app_appointment_no_show_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/AppointmentRescheduleProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_appointment_reschedule_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/appointments/demo/reschedule', name: 'app_appointment_reschedule_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/AvailabilityProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_availability_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/availability', name: 'app_availability_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/BillingInvoicesProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_billing_invoices_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/billing/invoices', name: 'app_billing_invoices_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/BillingPaymentMethodProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_billing_payment_method_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/billing/payment-method', name: 'app_billing_payment_method_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/BillingProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_billing_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/billing', name: 'app_billing_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ClientCreateProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_client_create_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/clients/create', name: 'app_client_create_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ClientDetailProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_client_detail_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/clients/demo', name: 'app_client_detail_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ClientEditProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_client_edit_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/clients/demo/edit', name: 'app_client_edit_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ClientExportProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_client_export_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/clients/export', name: 'app_client_export_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ClientImportProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_client_import_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/clients/import', name: 'app_client_import_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ClientMergeProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_client_merge_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/clients/merge', name: 'app_client_merge_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ClientsProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_clients_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/clients', name: 'app_clients_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/DashboardProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_dashboard_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/dashboard', name: 'app_dashboard_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/LoginProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_login_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/professionals/login', name: 'app_login_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/MarketingProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_marketing_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/marketing', name: 'app_marketing_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/MultiEstablishmentProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_multi_establishment_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/establishments', name: 'app_multi_establishment_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/NotificationsProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_notifications_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/notifications', name: 'app_notifications_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/OnboardingProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_onboarding_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/onboarding', name: 'app_onboarding_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/PaymentsProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_payments_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/payments', name: 'app_payments_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/PricingProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_pricing_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/pricing', name: 'app_pricing_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/RegisterProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_register_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/professionals/register', name: 'app_register_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ReportsProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_reports_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/reports', name: 'app_reports_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ResourceCreateProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_resource_create_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/resources/create', name: 'app_resource_create_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ResourceEditProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_resource_edit_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/resources/demo/edit', name: 'app_resource_edit_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ResourcesProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_resources_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/resources', name: 'app_resources_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ReviewsProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_reviews_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/reviews', name: 'app_reviews_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/RolesProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_roles_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/roles', name: 'app_roles_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ServiceCategoryProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_service_category_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/services/categories', name: 'app_service_category_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ServiceCreateProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_service_create_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/services/create', name: 'app_service_create_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ServiceDetailProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_service_detail_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/services/demo', name: 'app_service_detail_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ServiceEditProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_service_edit_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/services/demo/edit', name: 'app_service_edit_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ServicePackageCreateProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_service_package_create_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/services/packages/create', name: 'app_service_package_create_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/ServicesProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_services_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/services', name: 'app_services_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsBookingRulesProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_booking_rules_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings/booking-rules', name: 'app_settings_booking_rules_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsCancellationPolicyProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_cancellation_policy_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings/cancellation-policy', name: 'app_settings_cancellation_policy_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsEstablishmentProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_establishment_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings/establishment', name: 'app_settings_establishment_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsIntegrationsProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_integrations_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings/integrations', name: 'app_settings_integrations_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsLanguagesProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_languages_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings/languages', name: 'app_settings_languages_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsLegalProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_legal_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings/legal', name: 'app_settings_legal_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsNotificationsProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_notifications_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings/notifications', name: 'app_settings_notifications_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings', name: 'app_settings_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SettingsWidgetProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_settings_widget_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/settings/widget', name: 'app_settings_widget_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SubscriptionCheckoutProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_subscription_checkout_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/subscription/checkout', name: 'app_subscription_checkout_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SubscriptionProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_subscription_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/subscription', name: 'app_subscription_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/SubscriptionSuccessProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_subscription_success_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/subscription/success', name: 'app_subscription_success_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/TeamAbsenceProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_team_absence_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/team/absences', name: 'app_team_absence_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/TeamHolidaysProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_team_holidays_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/team/holidays', name: 'app_team_holidays_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/TeamMemberCreateProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_team_member_create_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/team/create', name: 'app_team_member_create_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/TeamMemberEditProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_team_member_edit_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/team/demo/edit', name: 'app_team_member_edit_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/TeamMemberProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_team_member_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/team/demo', name: 'app_team_member_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/TeamProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_team_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/team', name: 'app_team_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/VerificationProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_verification_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/verification', name: 'app_verification_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Pro/WaitlistProController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_waitlist_pro"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/pro/waitlist', name: 'app_waitlist_pro', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/AboutController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_about"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/about', name: 'app_about', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/AccessibilityController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_accessibility"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/accessibility', name: 'app_accessibility', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/BlogCategoryController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_blog_category"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/blog/categories/beauty', name: 'app_blog_category', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/BlogController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_blog"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/blog', name: 'app_blog', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/BlogDetailController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_blog_detail"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/blog/beauty-trends', name: 'app_blog_detail', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/CategoryCityPageController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_category_city_page"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/hair-salons/paris', name: 'app_category_city_page', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/CategoryPageController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_category_page"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/categories/beauty', name: 'app_category_page', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/CityPageController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_city_page"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/cities/paris', name: 'app_city_page', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/ContactController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_contact"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/contact', name: 'app_contact', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/CookiesController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_cookies"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/cookies', name: 'app_cookies', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/DataProtectionController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_data_protection"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/data-protection', name: 'app_data_protection', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/FaqPublicController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_faq_public"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/faq', name: 'app_faq_public', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/GuideCityController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_guide_city"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/guides/paris', name: 'app_guide_city', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/HelpCenterController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_help_center"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/help', name: 'app_help_center', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/HelpDetailController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_help_detail"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/help/booking', name: 'app_help_detail', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/HomeController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_home"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}', name: 'app_home', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/LegalNoticeController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_legal_notice"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/legal-notice', name: 'app_legal_notice', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/PrivacyPolicyController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_privacy_policy"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/privacy-policy', name: 'app_privacy_policy', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/SalonDetailController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_salon_detail"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/salons/maison-eclat-paris', name: 'app_salon_detail', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/SearchResultsController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_search_results"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/search', name: 'app_search_results', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/ServiceCityPageController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_service_city_page"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/services/haircut/paris', name: 'app_service_city_page', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/StaffDetailController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_staff_detail"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/salons/maison-eclat-paris/staff/camille', name: 'app_staff_detail', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/Public/TermsController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_terms"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/terms', name: 'app_terms', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/System/EmptyStateController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_empty_state"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/states/empty', name: 'app_empty_state', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/System/Error403Controller.php",
+    "route_count": 1,
+    "route_names": [
+      "app_error_403"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/403', name: 'app_error_403', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/System/Error404Controller.php",
+    "route_count": 1,
+    "route_names": [
+      "app_error_404"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/404', name: 'app_error_404', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/System/Error500Controller.php",
+    "route_count": 1,
+    "route_names": [
+      "app_error_500"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/500', name: 'app_error_500', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/System/LoadingStateController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_loading_state"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/states/loading', name: 'app_loading_state', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/System/MaintenanceController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_maintenance"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/maintenance', name: 'app_maintenance', methods: ['GET']"
+    ]
+  },
+  {
+    "file": "Controller/System/OfflineController.php",
+    "route_count": 1,
+    "route_names": [
+      "app_offline"
+    ],
+    "route_attributes": [
+      "'/{_locale<en|fr|de|es|it|pt|nl|pl|ro|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|sk|sl|sv>?en}/offline', name: 'app_offline', methods: ['GET']"
+    ]
+  }
+]

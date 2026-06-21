@@ -41,6 +41,8 @@
         "symfony/validator": "8.1.*",
         "symfony/web-link": "8.1.*",
         "symfony/yaml": "8.1.*",
+        "symfonycasts/reset-password-bundle": "^1.25",
+        "symfonycasts/verify-email-bundle": "^1.18",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
     },
@@ -81,6 +83,8 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "importmap:install": "symfony-cmd"
         },
+        "cs:check": "@php vendor/bin/php-cs-fixer fix --dry-run --diff --verbose",
+        "cs:fix": "@php vendor/bin/php-cs-fixer fix --verbose",
         "post-install-cmd": [
             "@auto-scripts"
         ],
@@ -98,6 +102,9 @@
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^4.3",
+        "fakerphp/faker": "^1.24",
+        "friendsofphp/php-cs-fixer": "^3.95",
         "phpunit/phpunit": "^13.2",
         "symfony/browser-kit": "8.1.*",
         "symfony/css-selector": "8.1.*",
